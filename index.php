@@ -1,3 +1,4 @@
+<?php include('./php/server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +47,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </nav>
     <!-- Modal -->
@@ -74,19 +74,24 @@
     <!-- Registration -->
     <div class="hide" id="hide">
         <div class="registration">
+
+
+
+
             <div class="h-100 me-2 hide" id="login">
                 <h5 class="text-center mb-5 mt-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
-                <form>
+                <?php include('./php/errorslogin.php'); ?>
+                <form method="post" action="index.php">
                     <div class="form-outline mb-5 d-flex justify-content-center">
-                        <input type="text" id="email" class="form-control w-75" placeholder="Your Email" />
+                        <input type="text" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
                     <div class="d-flex justify-content-center">
-                        <input type="password" id="password" class="form-control w-75" placeholder="Password" />
+                        <input type="password" id="password" name="password" class="form-control w-75" placeholder="Password" />
                     </div>
                     <a href="#" onclick="register()" class=" createYourAccount">Create your account</a>
 
-                    <button type="submit" class="loginbtn btn btn-success">Login</button>
+                    <button type="submit" class="loginbtn btn btn-success" name="login_user">Login</button>
 
                     <a href="#" onclick="forgot()" class="forgotpass">Forgot password?</a>
                 </form>
@@ -94,21 +99,30 @@
             <div class="h-100 me-2" id="register">
                 <h5 class="text-center mb-5 mt-5 col-12">Create an account</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
-                <form>
-                    <div class="form-outline mb-4 d-flex justify-content-center">
-                        <input type="text" id="email" class="form-control w-75" placeholder="Your Email" />
+                
+                <form method="post" action="index.php">
+                    <?php include('./php/errorsregister.php'); ?>
+                    <div class="form-outline mb-2 d-flex justify-content-center">
+                        <input type="text" name="username" id="username" class="form-control w-75" placeholder="Username" value="<?php echo $username; ?>" />
                     </div>
-                    <div class="mb-4 d-flex justify-content-center">
-                        <input type="password" id="password" class="form-control w-75" placeholder="Password" />
+                    <div class="form-outline mb-2 d-flex justify-content-center">
+                        <input type="text" name="email" id="email" class="form-control w-75" placeholder="Your Email" value="<?php echo $email; ?>" />
+                    </div>
+                    <div class="mb-2 d-flex justify-content-center">
+                        <input type="password" name="password_1" id="password" class="form-control w-75" placeholder="Password" />
                     </div>
                     <div class="d-flex justify-content-center">
-                        <input type="password" id="rep-password" class="form-control w-75" placeholder="Repeat your password" />
+                        <input type="password" name="password_2" id="rep-password" class="form-control w-75" placeholder="Repeat your password" />
                     </div>
                     <a href="#" onclick="login()" class="existingAcc">You have existing account?</a>
 
-                    <button type="submit" class="registerbtn btn btn-success ">Register</button>
+                    <button type="submit" name="reg_user" class="registerbtn btn btn-success ">Register</button>
                 </form>
             </div>
+
+
+
+
         </div>
     </div>
     <!-- Close Registration -->
