@@ -1,2 +1,0 @@
-# Headdanal
-Group of SCRUM

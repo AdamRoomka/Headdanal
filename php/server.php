@@ -20,9 +20,15 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($username)) { array_push($errorsRegister, "Username is required"); }
-  if (empty($email)) { array_push($errorsRegister, "Email is required"); }
-  if (empty($password_1)) { array_push($errorsRegister, "Password is required"); }
+  if (empty($username)){ 
+    array_push($errorsRegister, "Username is required"); 
+  }
+  if (empty($email)){ 
+    array_push($errorsRegister, "Email is required"); 
+  }
+  if (empty($password_1)){ 
+    array_push($errorsRegister, "Password is required"); 
+  }
   if ($password_1 != $password_2) {
 	array_push($errorsRegister, "The two passwords do not match");
   }
@@ -34,8 +40,12 @@ if (isset($_POST['reg_user'])) {
   $user = mysqli_fetch_assoc($result);
   
   if ($user) { // if user exists
-    if ($user['username'] === $username || $user['email'] === $email) {
-      array_push($errorsRegister, "Username or email already exists");
+    if ($user['username'] === $username) {
+      array_push($errorsRegister, "Username already exists");
+    }
+
+    if ($user['email'] === $email) {
+      array_push($errorsRegister, "Email already exists");
     }
   }
 
@@ -47,8 +57,7 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
-  	header('location: index.php');
+  	header('location: ../index.php');
   }
 }
 
@@ -58,24 +67,23 @@ if (isset($_POST['login_user'])) {
   $password = mysqli_real_escape_string($db, $_POST['password']);
 
   if (empty($email)) {
-  	array_push($errorsLogin, "Email is required");
+    array_push($errorsLogin, "Email is required");
   }
   if (empty($password)) {
-  	array_push($errorsLogin, "Password is required");
+    array_push($errorsLogin, "Password is required");
   }
 
   if (count($errorsLogin) == 0) {
   	$password = md5($password);
   	$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
   	$results = mysqli_query($db, $query);
-  	if (mysqli_num_rows($results) == 1) {
-  	  $_SESSION['email'] = $email;
-  	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: index.php');
+    $data = mysqli_fetch_assoc($results);
+  	if ($data != 0) {
+  	  $_SESSION['username'] = $data["username"];
   	}else {
   		array_push($errorsLogin, "Wrong email/password combination");
+      $_SESSION['login'] = " Wrong email/password combination";
   	}
   }
 }
-
 ?>
