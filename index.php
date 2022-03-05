@@ -10,66 +10,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+    
     <title>HomePage</title>
-    <link rel="icon" href="./images/green.png">
+    <link rel="icon" href="./main-images/green.png">
 </head>
 <body>
     <div id="transparent"></div>
 <!-- TOP NAV -->
-    <nav class="navbar navbar-expand-lg bg beige navbar-light  d-none d-lg-block" id="templatemo_nav_top">
-        <div class="container text-light">
-            <div class="w-100 d-flex justify-content-between">
-                <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@easy.TECH.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">+370 666 55444</a>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text ">
-                                <i class="fa fa-fw fa-search ms-4"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-light ms-4"></i>
-                    </a>
-                    <a class="nav-icon position-relative text-decoration-none ms-2" href="#">
-                        <i class="fa fa-fw fa-cart-arrow-down text-light ms-4"></i>
-                        
-                    </a>
-                    <div class="d-flex">
-                        <?php  
-                        
-                        if (isset($_SESSION['username'])){
-                             ?>
-                            <p class="mx-2 mb-0">
-                                <strong>
-                                    <?php echo $_SESSION["username"]; ?>
-                                </strong>
-                            </p>
-                            <?php
-                            echo '
-                            <p class="ms-2 mb-0">
-                                <a href="./php/logout.php" style="color: green;">logout</a>
-                            </p>';
-                        }else{
-                            echo '
-                            <a class="nav-icon position-relative text-decoration-none ms-2" href="#">
-                                <i onclick="registration()" class="fa fa-fw fa-user text-light ms-4"></i>
-                            </a>';
-                        };
-                        ?>
-                    </div>
+    <nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
+        <div class="container">
+            <div class="d-flex flex-row">
+                <a class="text-light text-decoration-none " href="mailto:info@company.com"><i class="fa fa-envelope"></i> @easy.TECH.com</a>
+                <a class=" text-light text-decoration-none mx-4" href="tel:010-020-0340"><i class="fa fa-phone"></i>  +370 666 55444</a>
+            </div>
+            <div class="d-flex flex-row">
+                <a class="nav-icon  d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search fa-lg text-light ms-4"></i>
+                </a>
+                
+                <a class="cart nav-icon position-relative text-decoration-none ms-2" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4"></i>
+                    <span class="cart-basket d-flex align-items-center justify-content-center ">
+                            0
+                    </span>
+                </a>
+                <div class="d-flex">
+                    <?php  
+                    
+                    if (isset($_SESSION['username'])){
+                            ?>
+                        <p class="mx-2 mb-0">
+                            <strong>
+                                <?php echo $_SESSION["username"]; ?>
+                            </strong>
+                        </p>
+                        <?php
+                        echo '
+                        <p class="ms-2 mb-0">
+                            <a href="./php/logout.php" style="color: green;">logout</a>
+                        </p>';
+                    }else{
+                        echo '
+                        <a class="nav-icon position-relative text-decoration-none ms-2" href="#">
+                            <i onclick="registration()" class="fa fa-fw fa-user text-light ms-4"></i>
+                        </a>';
+                    };
+                    ?>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Modal -->
+    <!-- Modal search-->
     <div class="modal fade bg-transperant" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
@@ -85,8 +78,36 @@
             </form>
         </div>
     </div>
-    <!-- close Modal -->
-<!-- CLOSE TOP NAV -->
+    <!-- close Modal search -->
+    
+    <!-- modal shopping cart -->
+<div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="cartModal">
+            <section class="container content-section">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+          </h5>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- clouse modal shopping cart -->
 
     <div class="hide" id="hide">
         <div class="registration">
@@ -116,6 +137,8 @@
     </div>
     <!-- Close Registration -->
 
+<!-- CLOSE TOP NAV -->
+
     <!-- HEADER-BOTTOM -->
     <nav class="navbar sticky-lg-top  navbar-expand-lg navbar-light ">
         <div class="container">
@@ -129,17 +152,17 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="./ABOUT-US/indexABOUT.html">About us</a>
               </li>
               
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Category
+                    Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">TABLET</a></li>
-                  <li><a class="dropdown-item" href="#">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="#">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Tablets/indexTablets.html">TABLET</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Desktops/indexDesktop.html">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Laptop/indexLaptop.html">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -148,44 +171,41 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">APPLE</a></li>
-                  <li><a class="dropdown-item" href="#">DELL</a></li>
-                  <li><a class="dropdown-item" href="#">HP</a></li>
-                  <li><a class="dropdown-item" href="#">LENOVO</a></li>
-            </ul>
-            
-          </div>
+                  <li><a class="dropdown-item" href="./PAGES/Apple/">APPLE</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Dell/">DELL</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Hp/">HP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Lenovo/">LENOVO</a></li>
+                </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+  </nav>
 <!-- CLOUSE HEADER-BOTTOM  -->
-
-<div class="bg-image  pb-5">
-    <img src="./images/header-img.jpg" class="fluid" alt="...">
-</div>
 
 
 <!-- CATEGORY IMAGES -->
 <div class="container container-category bg abstract pt-5 pb-5">
     <div class="row g-2 ">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/tablet-1.jpeg" alt="">
+            <a href="./PAGES/Tablets/indexTablets.html" class="hovereffect justify-content-center">
+                <img class="img-fluid" src="./main-images/tablet-1.jpeg" alt="">
                 <div class="overlay">
                     <p>Tablets</p> 
                 </div>
             </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/desctop-2.jpg" alt="">
+            <a href="./PAGES/Desktops/indexDesktop.html" class="hovereffect justify-content-center">
+                <img class="img-fluid" src="./main-images/desctop-2.jpg" alt="">
                 <div class="overlay">
                     <p>Desktops</p>
                 </div>
             </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex  ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/laptop-3.jpg" alt="">
+            <a href="./PAGES/Laptop/indexLaptop.html" class="hovereffect justify-content-center">
+                <img class="img-fluid" src="./main-images/laptop-3.jpg" alt="">
                 <div class="overlay">
                     <p>Laptops</p>
                 </div>
@@ -200,7 +220,7 @@
 <div class="container  mt-3 w-80 bg abstract">
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center pt-4 pb-4">
-            <img class="img-fluid img-frame" src="./images/man-typing.jpg" alt="">
+            <img class="img-fluid img-frame" src="./main-images/man-typing.jpg" alt="">
         </div>
         <div class="col-lg-6 col-md-12 pt-5 ">
             <div class="row gx-5">
@@ -245,61 +265,62 @@
             <div class="row g-3">
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/appleipad.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/appleipad.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€499</span> </div>
                             <p>iPad Air (64GB, Wi-Fi)</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn btn beige">Add to cart</button> </div>
-                        </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                        </div>                   
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/applemac.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/applemac.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€2 139 </span> </div>
                             <p> APPLE MacBook Pro 14" M1 Pro 8C CPU</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                        </div>                   
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/delldesctop.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/delldesctop.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€999</span> </div>
                             <p>Dell Latitude 3340</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/lenovotablet.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/lenovotablet.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€599</span> </div>
                             <p>Lenovo Tab P12 Pro</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/hpdesktops.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/hpdesktops.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€614</span> </div>
                             <p>HP Desktop 460 </p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./images/lenovo laptop.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./main-images/lenovo laptop.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€916</span> </div>
                             <p>ThinkPad T14s Gen 2 AMD (14”) </p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -324,7 +345,7 @@
             <div class="carousel-item active">
                 <i class="fa fa-quote-right pt-5"></i>                   
                 <figure class="text-cent col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote ">
+                    <blockquote class="blockquote text-success ">
                         <p>Easy to work with you! Brilliant company to deal with. Ordered MacBook Air and got it within 48 hours. Excellent condition and worth every euro. I wouldn’t hestitate to recommend them!</p>
                     </blockquote>
                     <figcaption class="blockquote-footer ">Caitlin Williams</figcaption>
@@ -333,7 +354,7 @@
             <div class="carousel-item">
                 <i class="fa fa-quote-right pt-5"></i>
                 <figure class="col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote">
+                    <blockquote class="blockquote  text-success">
                         <p>Great Computer
                             This is the second computer I've purchased from these guys. Great products that I can trust will meet my needs.</p>
                     </blockquote>
@@ -343,7 +364,7 @@
             <div class="carousel-item">
                 <i class="fa fa-quote-right pt-5"></i>
                 <figure class="col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote">
+                    <blockquote class="blockquote  text-success">
                         <p>Excellent Company and Service
                             Process was smooth, quick and simple. 
                            Super fast delivery. Good communication. Great product. I’m impressed..Highly recommend.</p>
@@ -365,16 +386,16 @@
     </div>
     <div class="row  text-center pt-5 pb-3">
         <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid" src="./images/AppleLogo.jpg" alt="">
+            <img class="img-fluid" src="./main-images/AppleLogo.jpg" alt="">
         </div> 
         <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid" src="./images/DellLogo.png" alt="">
+            <img class="img-fluid" src="./main-images/DellLogo.png" alt="">
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid"src="./images/HPlogo.jpg" alt="">
+            <img class="img-fluid"src="./main-images/HPlogo.jpg" alt="">
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid"src="./images/LenovoLogo.jpg" alt="">
+            <img class="img-fluid"src="./main-images/LenovoLogo.jpg" alt="">
         </div>
     </div>
 </div>      
