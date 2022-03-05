@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>HomePage</title>
-    <link rel="icon" href="./images/green.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contact</title>
+    <link rel="icon" href="../images/green.png">
 </head>
 <body>
     <div id="transparent" scroll="no"></div>
@@ -137,10 +137,10 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About us</a>
+                <a class="nav-link" href="../index.php#about-us">About us</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -165,235 +165,66 @@
                   <li><a class="dropdown-item" href="#">LENOVO</a></li>
                 </ul>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/contact.php">Contact us</a>
+                    <a class="nav-link" href="#">Contact us</a>
                 </li>
-            </ul>
+            </ul>  
           </div>
         </div>
       </nav>
 <!-- CLOUSE HEADER-BOTTOM  -->
 
-<div class="bg-image  pb-5">
-    <img src="./images/header-img.jpg" class="fluid" alt="...">
-</div>
+<!-- CONTACT START -->
 
-
-<!-- CATEGORY IMAGES -->
-<div class="container container-category bg abstract pt-5 pb-5">
-    <div class="row g-2 ">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/tablet-1.jpeg" alt="">
-                <div class="overlay">
-                    <p>Tablets</p> 
+<div>
+    <div class="contact-bg pb-5">
+        <div class="contact">
+            <div class="container">
+                <div class="row contact-card-bg">
+                    <div class="col-xl-6 col-lg-12 mb-2">
+                        <div class="contact-card">
+                            <div class="card-body">
+                                <div class="card-header beige text-white mt-3"><i class="fa fa-envelope"></i> Contact us.
+                                </div>
+                                <form class="mt-2">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" rows="6" required></textarea>
+                                    </div>
+                                    <div class="mx-auto mt-2">
+                                    <button type="submit" class="btn btn-success text-right">Submit</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="card bg-light mb-3">
+                            <div class="card-header beige text-white text-uppercase mt-4"><i class="fa fa-home"></i> Address</div>
+                            <div class="card-body">
+                                <p>Gedimino pr. 24</p>
+                                <p>69420 VILNIUS</p>
+                                <p>Lithuania</p>
+                                <p>Email : info@easy.TECH</p>
+                                <p>Tel.  +370 666 55444</p>           
+                            </div>           
+                        </div>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/desctop-2.jpg" alt="">
-                <div class="overlay">
-                    <p>Desktops</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex  ">
-            <a href="#" class="hovereffect justify-content-center">
-                <img class="img-fluid" src="./images/laptop-3.jpg" alt="">
-                <div class="overlay">
-                    <p>Laptops</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!--  CLOUSE CATEGORY IMAGES -->
-
-
-<!-- ABOUT US -->
-<div id="about-us" class="container  mt-3 w-80 bg abstract">
-    <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center pt-4 pb-4">
-            <img class="img-fluid img-frame" src="./images/man-typing.jpg" alt="">
-        </div>
-        <div class="col-lg-6 col-md-12 pt-5 ">
-            <div class="row gx-5">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-justify">
-                    <h4 class="mb-3">About Us</h4>
-                    <p><i>easy.TECH</i> was founded in 2007. Our plan was simple: let's make it easy for people to buy PC online, affordably with delivery to their door.</p>   
-                    <p>Now <i>easy.TECH </i>is one of the fastest growing IT retailer we are committed to provide the best customer service and competitive price in the market.</p>
-                    <p>We supply a wide range of notebook, desktop and tablets from major vendor. We are the premier notebook reseller for leading brands such as Apple, Dell, HP, Lenovo. </p>  
-                    <p> Our products and sales team reflect reliability, competitive prices and supportive customer service.</p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 mt-5 text-justify">
-                    <h4 class="mb-3">Shipping</h4>
-                    <p>We ship around the globe. We ship most international packages via DHL. Free Expedited Shipping for most orders over €200.</p>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 mt-5 text-justify">
-                    <h4 class="mb-3">Returns</h4>
-                    <p>If you are dissatisfied with your purchase for any reason, you may return it to <i>easy.TECH</i>within 30 days of the delivery date.</p>
-                </div>
-                
             </div>
         </div>
     </div>
 </div>
-<!--CLOUSE ABOUT US -->
 
 
-<!--  FEATURED PRODUCT  -->
-        <!-- Jumbatron -->
-        <div class="container-fluid py-2 bg beige">
-            <div class="row text-light text-center py-3">
-                <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Latest Products</h1>
-                    <p>
-                        Discover and view the latest products  available at easy.TECH
-                    </p>
-                </div>
-            </div>
-        <!-- Clouse jumbatron -->
-
-        <!-- Product card  -->
-        <div class="container pt-3 pb-3">
-            <div class="row g-3">
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/appleipad.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€499</span> </div>
-                            <p>iPad Air (64GB, Wi-Fi)</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/applemac.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€2 139 </span> </div>
-                            <p> APPLE MacBook Pro 14" M1 Pro 8C CPU</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/delldesctop.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€999</span> </div>
-                            <p>Dell Latitude 3340</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/lenovotablet.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€599</span> </div>
-                            <p>Lenovo Tab P12 Pro</p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/hpdesktops.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€614</span> </div>
-                            <p>HP Desktop 460 </p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                    <div class="card p-2">
-                        <div class="text-center"> <img src="./images/lenovo laptop.jpg" class="img-fluid" width="200" /> </div>
-                        <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€916</span> </div>
-                            <p>ThinkPad T14s Gen 2 AMD (14”) </p>
-                            <div class="buttons d-flex justify-content-center"> <button class="btn btn-outline-secondary mr-1">Buy Now</button> <button class="btn beige">Add to cart</button> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>    
-<!--Clouse Product card  -->
-<!-- CLOUSE FEATURED PRODUCT  -->
-
-
-<!-- TESTIMONIAL -->
-<section class="testimonial-slider container bg-light bg abstract pt-3 pb-1">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner py-5 text-center">
-            <div class="carousel-item active">
-                <i class="fa fa-quote-right pt-5"></i>                   
-                <figure class="text-cent col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote ">
-                        <p>Easy to work with you! Brilliant company to deal with. Ordered MacBook Air and got it within 48 hours. Excellent condition and worth every euro. I wouldn’t hestitate to recommend them!</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer ">Caitlin Williams</figcaption>
-                </figure>
-            </div>
-            <div class="carousel-item">
-                <i class="fa fa-quote-right pt-5"></i>
-                <figure class="col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote">
-                        <p>Great Computer
-                            This is the second computer I've purchased from these guys. Great products that I can trust will meet my needs.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer ">Jonh Son</figcaption>
-                </figure>
-            </div>
-            <div class="carousel-item">
-                <i class="fa fa-quote-right pt-5"></i>
-                <figure class="col-md-6 offset-md-3 mt-4">
-                    <blockquote class="blockquote">
-                        <p>Excellent Company and Service
-                            Process was smooth, quick and simple. 
-                           Super fast delivery. Good communication. Great product. I’m impressed..Highly recommend.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">Janet Rowberry</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-<!--CLOUSE TESTIMONIAL  -->
-
-<!-- FEATURED BRANDS -->
-<div class="container bg abstract container-brands py-5 ">
-    <div class="row  text-center py-3 ">
-        <div class="col-lg-6 m-auto ">
-            <h1 class="h1">Trusted Partners</h1>
-        </div>
-    </div>
-    <div class="row  text-center pt-5 pb-3">
-        <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid" src="./images/AppleLogo.jpg" alt="">
-        </div> 
-        <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid" src="./images/DellLogo.png" alt="">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid"src="./images/HPlogo.jpg" alt="">
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <img class="img-fluid"src="./images/LenovoLogo.jpg" alt="">
-        </div>
-    </div>
-</div>      
-<!--CLOUSE FEATURED BRANDS -->
-
+<!-- CONTACT END -->
 
  <!-- FOOTER -->
  <footer class="bg beige" id="tempaltemo_footer">
@@ -493,7 +324,7 @@
 
 
 
-    <script src="SCRIPT/main.js"></script>
+    <script src="../SCRIPT/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
