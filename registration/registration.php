@@ -12,14 +12,20 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
 
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="icon" href="../images/green.png">
+    <link rel="icon" href="../main-images/green.png">
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .image{
+            background-image: url("./laptop-img.jpg");
+            background-size: cover;
+        }
+    </style>
 </head>
-<body class="image" style="background-repeat: no-repeat; overflow: hidden">
+<body class="image" style="background-repeat: no-repeat; overflow: hidden;">
+        
     <!-- Registration -->
     <div>
-        <img src="../images/header-img.jpg" alt="image" style="height: 100vh; position: absolute;">
-        <div class="registration">
+        <div class="registration"  style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <div class="h-100 me-2" id="register">
                 <h5 class="text-center mb-5 mt-5 col-12">Create an account</h5>
                 <a href="../index.php" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>

@@ -31,7 +31,7 @@
                 </a>
                 
                 <a class="cart nav-icon position-relative text-decoration-none ms-2" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
-                    <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4"></i>
+                    <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4 "></i>
                     <span class="cart-basket d-flex align-items-center justify-content-center ">
                             0
                     </span>
@@ -53,9 +53,9 @@
                         </p>';
                     }else{
                         echo '
-                        <a class="nav-icon position-relative text-decoration-none ms-2" href="#">
-                            <i onclick="registration()" class="fa fa-fw fa-user text-light ms-4"></i>
-                        </a>';
+                        <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
+                        echo '
+                        <a class="btn nav-icon position-relative text-decoration-none" href="./registration/registration.php">Create account!</a>';
                     };
                     ?>
                 </div>
@@ -100,7 +100,7 @@
                     <strong class="cart-total-title">Total</strong>
                     <span class="cart-total-price">$0</span>
                 </div>
-                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                <button class="btn btn-primary btn-purchase" id="btn" type="button">PURCHASE</button>
             </section>
           </h5>
         </div>
@@ -152,7 +152,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./ABOUT-US/indexABOUT.html">About us</a>
+                <a class="nav-link" href="./ABOUT-US/about.php">About us</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -160,9 +160,9 @@
                     Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./PAGES/Tablets/indexTablets.html">TABLET</a></li>
-                  <li><a class="dropdown-item" href="./PAGES/Desktops/indexDesktop.html">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="./PAGES/Laptop/indexLaptop.html">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Tablets/tablets.php">TABLET</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Desktops/desktop.php">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Laptop/laptop.php">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -171,10 +171,10 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./PAGES/Apple/">APPLE</a></li>
-                  <li><a class="dropdown-item" href="./PAGES/Dell/">DELL</a></li>
-                  <li><a class="dropdown-item" href="./PAGES/Hp/">HP</a></li>
-                  <li><a class="dropdown-item" href="./PAGES/Lenovo/">LENOVO</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Apple/apple.php">APPLE</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Dell/dell.php">DELL</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Hp/hp.php">HP</a></li>
+                  <li><a class="dropdown-item" href="./PAGES/Lenovo/lenovo.php">LENOVO</a></li>
                 </ul>
             </li>
           </ul>
@@ -188,7 +188,7 @@
 <div class="container container-category bg abstract pt-5 pb-5">
     <div class="row g-2 ">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="./PAGES/Tablets/indexTablets.html" class="hovereffect justify-content-center">
+            <a href="./PAGES/Tablets/tablets.php" class="hovereffect justify-content-center">
                 <img class="img-fluid" src="./main-images/tablet-1.jpeg" alt="">
                 <div class="overlay">
                     <p>Tablets</p> 
@@ -196,7 +196,7 @@
             </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex ">
-            <a href="./PAGES/Desktops/indexDesktop.html" class="hovereffect justify-content-center">
+            <a href="./PAGES/Desktops/desktop.php" class="hovereffect justify-content-center">
                 <img class="img-fluid" src="./main-images/desctop-2.jpg" alt="">
                 <div class="overlay">
                     <p>Desktops</p>
@@ -204,7 +204,7 @@
             </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex  ">
-            <a href="./PAGES/Laptop/indexLaptop.html" class="hovereffect justify-content-center">
+            <a href="./PAGES/Laptop/laptop.php" class="hovereffect justify-content-center">
                 <img class="img-fluid" src="./main-images/laptop-3.jpg" alt="">
                 <div class="overlay">
                     <p>Laptops</p>
@@ -269,7 +269,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€499</span> </div>
                             <p>iPad Air (64GB, Wi-Fi)</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
                         </div>                   
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€2 139 </span> </div>
                             <p> APPLE MacBook Pro 14" M1 Pro 8C CPU</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
                         </div>                   
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€999</span> </div>
                             <p>Dell Latitude 3340</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
                         </div>                        
                     </div>
                 </div>
@@ -299,7 +299,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€599</span> </div>
                             <p>Lenovo Tab P12 Pro</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
                         </div>                        
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€614</span> </div>
                             <p>HP Desktop 460 </p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +319,7 @@
                         <div class="content">
                             <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€916</span> </div>
                             <p>ThinkPad T14s Gen 2 AMD (14”) </p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Apple/indexApple.html">View More</button> </a>
+                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
                         </div>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-success border-bottom pb-3 border-light logo">easy.TECH</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#"> About us</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./ABOUT-US/about.php"> About us</a></li>
                        
                     <li class="adress pt-3">
                         <p>Gedimino pr. 24, Vilnius<br>Lithuania</p>            
@@ -431,9 +431,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Products</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#">Tablets</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Laptops</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Desktops</a></li>  
+                    <li><a class="text-decoration-none text-secondary" href="./PAGES/Tablets/tablets.php">Tablets</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./PAGES/Laptop/laptop.php">Laptops</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./PAGES/Desktops/desktop.php">Desktops</a></li>  
                 </ul>
             </div>
 
@@ -460,8 +460,6 @@
                             </li>';
                         };
                     ?>
-                    
-
                     <h4 class="mt-5 connect">Stay connected</h4>
                     <li class="list-inline-item text-center ">
                         <a class="text-light text-decoration-none " target="_blank" href="http://facebook.com/"><i class="fa fa-facebook-square " aria-hidden="true"></i></a>
