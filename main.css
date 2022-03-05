@@ -263,6 +263,39 @@ th {
 	text-align: center;
 }
 
+/* CONTACTS */
+
+.contact-bg {
+	background-image: url(../images/header-img.jpg);
+	height: 870px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact {
+	/* background-color: rgba(255, 255, 255, 0.5); */
+	width: 60%;
+	height: 80%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-card-bg {
+	background-color: rgba(255, 255, 255, 0.85);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.card {
+	margin: 0 auto;
+}
+
 .price {
 	margin-left: 1rem;
 }

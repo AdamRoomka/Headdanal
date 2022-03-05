@@ -217,7 +217,7 @@
 
 
 <!-- ABOUT US -->
-<div class="container  mt-3 w-80 bg abstract">
+<div id="about-us" class="container  mt-3 w-80 bg abstract">
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center pt-4 pb-4">
             <img class="img-fluid img-frame" src="./main-images/man-typing.jpg" alt="">
