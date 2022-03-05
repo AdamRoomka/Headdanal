@@ -8,14 +8,14 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-.hide{
+.hide {
 	display: none;
 }
-.abstract {
-	background-image: url(./images/18410.jpg);
-	width: 100%;
-	size: repeat;
+
+.contactt {
+	width: 400px;
 }
+
 .beige {
 	background-color: rgb(194, 192, 189);
 }
@@ -24,8 +24,6 @@
 .bg-image img {
 	width: 100%;
 }
-
-/* CATEGORY-IMAGES */
 
 /* CATEGORY-IMAGES-hover */
 .hovereffect {
@@ -110,8 +108,6 @@
 .text-justify {
 	text-align: justify;
 }
-
-/* frame photo 'man-typing' */
 
 /* Product card   */
 .height-100 {
@@ -208,26 +204,27 @@
 		border: none;
 	}
 }
-.transparent{
+
+/* modal-registration */
+.transparent {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.575);
 	z-index: 1;
 }
-.close{
+.close {
 	position: absolute;
 	top: 5px;
 	right: 23px;
 	text-decoration: none;
 }
-.registration{
+.registration {
 	width: 480px;
 	max-height: 70%;
 	min-height: 420px;
 	border: 2px solid gray;
 	border-radius: 5px;
-	/* box-shadow: 0px 0px 80px 900px rgba(0, 0, 0, 0.575); */
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -235,30 +232,35 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
-.loginbtn{
-	position: absolute;
-	right: 55px;
-	bottom: 50px;
+.sto{
+	width: 100%;
 }
-.createYourAccount{
-	position: absolute;
-	left: 24px;
-	bottom: 70px;
+
+/* modal-registration clouse */
+
+/* SHOP CART NUMBER */
+
+a.cart:hover {
+	text-decoration: none;
+	color: #d60e96;
 }
-.forgotpass{
+
+a.cart .cart-basket {
+	font-size: .6rem;
 	position: absolute;
-	left: 24px;
-	bottom: 40px;
+	top: -6px;
+	right: -5px;
+	width: 15px;
+	height: 15px;
+	color: #fff;
+	background-color: gray;
+	border-radius: 50%;
 }
-.registerbtn{
-	position: absolute;
-	bottom: 50px;
-	right: 50px;
-}
-.existingAcc{
-	position: absolute;
-	left: 24px;
-	bottom: 55px;
+
+.table-image td,
+th {
+	vertical-align: middle;
+	text-align: center;
 }
 
 /* CONTACTS */
@@ -293,3 +295,12 @@
 .card {
 	margin: 0 auto;
 }
+
+.price {
+	margin-left: 1rem;
+}
+
+.modal-footer {
+	padding-top: 0rem;
+}
+/* modal cart  */
