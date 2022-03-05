@@ -232,21 +232,10 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
-.createYourAccount{
-	position: absolute;
-	left: 24px;
-	bottom: 70px;
+.sto{
+	width: 100%;
 }
-.forgotpass {
-	position: absolute;
-	left: 24px;
-	bottom: 40px;
-}
-.existingAcc{
-	position: absolute;
-	left: 24px;
-	bottom: 55px;
-}
+
 /* modal-registration clouse */
 
 /* SHOP CART NUMBER */
