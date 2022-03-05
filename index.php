@@ -17,30 +17,47 @@
     <link rel="icon" href="./main-images/green.png">
 </head>
 <body>
-    <div id="transparent" scroll="no"></div>
+    <div id="transparent"></div>
 <!-- TOP NAV -->
-<nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
-    <div class="container">
-        <div class="d-flex flex-row">
-            <a class="text-light text-decoration-none " href="mailto:info@company.com"><i class="fa fa-envelope"></i> @easy.TECH.com</a>
-            <a class=" text-light text-decoration-none mx-4" href="tel:010-020-0340"><i class="fa fa-phone"></i>  +370 666 55444</a>
-        </div> 
-
-        <div class="d-flex flex-row">
-            <a class="nav-icon  d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                <i class="fa fa-fw fa-search fa-lg text-light ms-4"></i>
-            </a>
-               
-            <a class="cart nav-icon position-relative text-decoration-none ms-2" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
-                <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4"></i>
-                <span class="cart-basket d-flex align-items-center justify-content-center ">
-                        0
-                </span>
-            </a>
-
-                    <a class="nav-icon position-relative text-decoration-none ms-3" href="#">
-                        <i onclick="registration()" class="fa fa-fw fa-user fa-lg text-light ms-4"></i>
-                    </a>
+    <nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
+        <div class="container">
+            <div class="d-flex flex-row">
+                <a class="text-light text-decoration-none " href="mailto:info@company.com"><i class="fa fa-envelope"></i> @easy.TECH.com</a>
+                <a class=" text-light text-decoration-none mx-4" href="tel:010-020-0340"><i class="fa fa-phone"></i>  +370 666 55444</a>
+            </div>
+            <div class="d-flex flex-row">
+                <a class="nav-icon  d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    <i class="fa fa-fw fa-search fa-lg text-light ms-4"></i>
+                </a>
+                
+                <a class="cart nav-icon position-relative text-decoration-none ms-2" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4"></i>
+                    <span class="cart-basket d-flex align-items-center justify-content-center ">
+                            0
+                    </span>
+                </a>
+                <div class="d-flex">
+                    <?php  
+                    
+                    if (isset($_SESSION['username'])){
+                            ?>
+                        <p class="mx-2 mb-0">
+                            <strong>
+                                <?php echo $_SESSION["username"]; ?>
+                            </strong>
+                        </p>
+                        <?php
+                        echo '
+                        <p class="ms-2 mb-0">
+                            <a href="./php/logout.php" style="color: green;">logout</a>
+                        </p>';
+                    }else{
+                        echo '
+                        <a class="nav-icon position-relative text-decoration-none ms-2" href="#">
+                            <i onclick="registration()" class="fa fa-fw fa-user text-light ms-4"></i>
+                        </a>';
+                    };
+                    ?>
                 </div>
             </div>
         </div>
@@ -61,9 +78,6 @@
             </form>
         </div>
     </div>
-            </div>
-        </div>
-    </nav>
     <!-- close Modal search -->
     
     <!-- modal shopping cart -->
@@ -95,48 +109,28 @@
 </div>
 <!-- clouse modal shopping cart -->
 
-    <!-- Registration -->
     <div class="hide" id="hide">
         <div class="registration">
-            <div class="h-100 me-2 hide" id="login">
-                <h5 class="text-center mb-5 mt-5 col-12">Login</h5>
+            <!-- Login -->
+            <div class="h-100 me-2" id="login">
+                <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
                 <?php include('./php/errorslogin.php'); ?>
                 <form method="post" action="index.php">
                     <div class="form-outline mb-5 d-flex justify-content-center">
-                        <input type="text" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
+                        <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mb-5">
                         <input type="password" id="password" name="password" class="form-control w-75" placeholder="Password" />
                     </div>
-                    <a href="#" onclick="register()" class=" createYourAccount">Create your account</a>
-
-                    <button type="submit" class="loginbtn btn btn-success" name="login_user">Login</button>
-
-                    <a href="#" onclick="forgot()" class="forgotpass">Forgot password?</a>
-                </form>
-            </div>
-            <div class="h-100 me-2" id="register">
-                <h5 class="text-center mb-5 mt-5 col-12">Create an account</h5>
-                <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
-                
-                <form method="post" action="index.php">
-                    <?php include('./php/errorsregister.php'); ?>
-                    <div class="form-outline mb-2 d-flex justify-content-center">
-                        <input type="text" name="username" id="username" class="form-control w-75" placeholder="Username" value="<?php echo $username; ?>" />
+                    <div class="row d-flex justify-content-around m-4">
+                        <div class="col-6 mt-1">
+                            <a href="./registration/registration.php">Create your account</a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end h-25">
+                            <button type="submit" class="btn btn-success" name="login_user">Login</button>
+                        </div>
                     </div>
-                    <div class="form-outline mb-2 d-flex justify-content-center">
-                        <input type="text" name="email" id="email" class="form-control w-75" placeholder="Your Email" value="<?php echo $email; ?>" />
-                    </div>
-                    <div class="mb-2 d-flex justify-content-center">
-                        <input type="password" name="password_1" id="password" class="form-control w-75" placeholder="Password" />
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <input type="password" name="password_2" id="rep-password" class="form-control w-75" placeholder="Repeat your password" />
-                    </div>
-                    <a href="#" onclick="login()" class="existingAcc">You have existing account?</a>
-
-                    <button type="submit" name="reg_user" class="registerbtn btn btn-success ">Register</button>
                 </form>
             </div>
         </div>
@@ -447,8 +441,27 @@
                 <h4 class="h4 text-light border-bottom pb-3 border-light">My account</h4>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none text-secondary" href="#"></a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Sign in</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Create account</a></li>
+                    <?php  
+                        if (isset($_SESSION['username'])){
+                            echo '
+                            <li>
+                                <a class="text-decoration-none text-secondary btn disabled" href="#">Sign in</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-secondary btn disabled" href="#">Create account</a>
+                            </li>';
+                        }else{
+                            echo '
+                            <li>
+                                <a onclick="registration()" class="text-decoration-none text-secondary" href="#">Sign in</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-secondary" href="./registration/registration.php">Create account</a>
+                            </li>';
+                        };
+                    ?>
+                    
+
                     <h4 class="mt-5 connect">Stay connected</h4>
                     <li class="list-inline-item text-center ">
                         <a class="text-light text-decoration-none " target="_blank" href="http://facebook.com/"><i class="fa fa-facebook-square " aria-hidden="true"></i></a>
@@ -508,6 +521,17 @@
 
     <script src="SCRIPT/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script>
+        function closing(){
+            document.querySelector("#transparent").classList.remove("transparent");
+            document.querySelector("body").style.overflow = "scroll";
+            document.querySelector("#hide").classList.add("hide");
+        }
+        function registration(){
+            document.querySelector("#transparent").classList.add("transparent");
+            document.querySelector("body").style.overflow = "hidden";
+            document.querySelector("#hide").classList.remove("hide");
+        }
+    </script>
 </body>
 </html>

@@ -225,7 +225,6 @@
 	min-height: 420px;
 	border: 2px solid gray;
 	border-radius: 5px;
-	/* box-shadow: 0px 0px 80px 900px rgba(0, 0, 0, 0.575); */
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -233,12 +232,7 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
-.loginbtn {
-	position: absolute;
-	right: 55px;
-	bottom: 50px;
-}
-.createYourAccount {
+.createYourAccount{
 	position: absolute;
 	left: 24px;
 	bottom: 70px;
@@ -248,12 +242,7 @@
 	left: 24px;
 	bottom: 40px;
 }
-.registerbtn {
-	position: absolute;
-	bottom: 50px;
-	right: 50px;
-}
-.existingAcc {
+.existingAcc{
 	position: absolute;
 	left: 24px;
 	bottom: 55px;
