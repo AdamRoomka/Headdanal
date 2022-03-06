@@ -228,7 +228,7 @@
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.85);
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
@@ -262,20 +262,13 @@ th {
 	vertical-align: middle;
 	text-align: center;
 }
-<<<<<<< HEAD
-.existingAcc{
-	position: absolute;
-	left: 24px;
-	bottom: 55px;
-}
-=======
->>>>>>> kontaktai
 
 /* CONTACTS */
 
 .contact-bg {
-	background-image: url(../images/header-img.jpg);
-	height: 870px;
+	background-image: url(./main-images/header-img.jpg);
+	background-size: cover;
+	height: 100vh;
 	margin-bottom: 50px;
 	display: flex;
 	align-items: center;

@@ -294,7 +294,7 @@
                     <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
                     <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
                     <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../PAGES/contact.php">Contact</a></li>
                 </ul>
             </div>
 
