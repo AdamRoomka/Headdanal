@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * header */ * {
 	padding: 0;
 	margin: 0;
@@ -316,5 +318,10 @@ a.cart .cart-basket {
 	transform: translate(-50%, -50%);
 	z-index: 2;
 }
-
+#templatemo_nav_top > div > div:nth-child(2) > div > a{
+	font-family: 'Poppins', sans-serif;
+	width: auto;
+	font-weight: 100;
+	border: 1px solid transparent;
+}
 /* modal-registration clouse */
