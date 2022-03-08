@@ -324,4 +324,8 @@ a.cart .cart-basket {
 	font-weight: 100;
 	border: 1px solid transparent;
 }
-/* modal-registration clouse */
+#tempaltemo_footer > div > div.row > div:nth-child(3) > ul > li .text-secondary{
+	width: auto;
+	font-weight: 400;
+}
+/* modal-registration close */
