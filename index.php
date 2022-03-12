@@ -9,8 +9,9 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    
+
     <link rel="stylesheet" href="./main.css">
+    
     <script src="./main.js"></script>
     
     <title>HomePage</title>
@@ -29,13 +30,14 @@
                 <a class="nav-icon  d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                     <i class="fa fa-fw fa-search fa-lg text-light ms-4"></i>
                 </a>
-                
+
                 <a class="cart nav-icon position-relative text-decoration-none ms-2" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
                     <i id="cart" class="fa fas fa fa-shopping-cart fa-lg text-light ms-4 "></i>
                     <span class="cart-basket d-flex align-items-center justify-content-center ">
                             0
                     </span>
                 </a>
+                
                 <div class="d-flex">
                     <?php  
                     
@@ -225,18 +227,21 @@
         <div class="col-lg-6 col-md-12 pt-5 ">
             <div class="row gx-5">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-justify">
-                    <h4 class="mb-3">About Us</h4>
+                    <!-- PRIDĖTA text--success -->
+                <h4 class="mb-3 text-success">About Us</h4>  
                     <p><i>easy.TECH</i> was founded in 2007. Our plan was simple: let's make it easy for people to buy PC online, affordably with delivery to their door.</p>   
                     <p>Now <i>easy.TECH </i>is one of the fastest growing IT retailer we are committed to provide the best customer service and competitive price in the market.</p>
                     <p>We supply a wide range of notebook, desktop and tablets from major vendor. We are the premier notebook reseller for leading brands such as Apple, Dell, HP, Lenovo. </p>  
                     <p> Our products and sales team reflect reliability, competitive prices and supportive customer service.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 mt-5 text-justify">
-                    <h4 class="mb-3">Shipping</h4>
+                    <!-- PRIDĖTA text--success -->
+                    <h4 class="mb-3 text-success">Shipping</h4>
                     <p>We ship around the globe. We ship most international packages via DHL. Free Expedited Shipping for most orders over €200.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 mt-5 text-justify">
-                    <h4 class="mb-3">Returns</h4>
+                    <!-- PRIDĖTA text--success -->
+                    <h4 class="mb-3 text-success">Returns</h4>
                     <p>If you are dissatisfied with your purchase for any reason, you may return it to <i>easy.TECH</i>within 30 days of the delivery date.</p>
                 </div>
                 
@@ -260,66 +265,70 @@
             </div>
         <!-- Clouse jumbatron -->
 
-        <!-- Product card  -->
+
+
+<!-- PAKEISK ŠITĄ VIETĄ, PAS SAVE IŠTRINK, ČIA NUKOPINK -->
+
+        <!-- latest products  -->
         <div class="container pt-3 pb-3">
             <div class="row g-3">
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/appleipad.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Tablets/imagesTablet/appleTablet2.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€499</span> </div>
-                            <p>iPad Air (64GB, Wi-Fi)</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Apple 10.2" iPad</span> <span class="price text-success">€489</span> </div>
+                            <p>Tablet</p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
                         </div>                   
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/applemac.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Laptop/imagesLaptop/laptopApple04.webp" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€2 139 </span> </div>
-                            <p> APPLE MacBook Pro 14" M1 Pro 8C CPU</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Apple 13in MacBook Pro</span> <span class="price text-success">€500 </span> </div>
+                            <p> Laptop</p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
                         </div>                   
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/delldesctop.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Desktops/desktop-images/Hp02.png" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€999</span> </div>
-                            <p>Dell Latitude 3340</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">HP 27 Pavilion All-in-One PC</span> <span class="price text-success">€1400</span> </div>
+                            <p>PC</p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
                         </div>                        
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/lenovotablet.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Tablets/imagesTablet/dellTablet1.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Tablet</span> <span class="price">€599</span> </div>
-                            <p>Lenovo Tab P12 Pro</p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Dell Latitude 7210</span> <span class="price text-success">€1400</span> </div>
+                            <p>Tablet</p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Tablets/tablets.php" id="btn">View More</button> </a>
                         </div>                        
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/hpdesktops.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Desktops/desktop-images/Lenovo03.jpg" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Desktop</span> <span class="price">€614</span> </div>
-                            <p>HP Desktop 460 </p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Lenovo IdeaCentre AIO 3</span> <span class="price text-success">€749</span> </div>
+                            <p>PC </p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Desktops/desktop.php" id="btn">View More</button> </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="card p-2">
-                        <div class="text-center"> <img src="./main-images/lenovo laptop.jpg" class="img-fluid" width="200" /> </div>
+                        <div class="text-center"> <img src="./PAGES/Laptop/imagesLaptop/laptopDell02.webp" class="img-fluid" width="200" /> </div>
                         <div class="content">
-                            <div class="d-flex justify-content-between align-items-center"> <span class="category">Laptop</span> <span class="price">€916</span> </div>
-                            <p>ThinkPad T14s Gen 2 AMD (14”) </p>
-                            <a class="buttons d-flex justify-content-center btn beige" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
+                            <div class="d-flex justify-content-between align-items-center"> <span class="category">2022 Dell Inspiron 5000 2-in-1 14" HD</span> <span class="price text-success">€679</span> </div>
+                            <p>Laptop</p>
+                            <a class="buttons d-flex justify-content-center btn beige text-success" href="./PAGES/Laptop/laptop.php" id="btn">View More</button> </a>
                         </div>
                         </div>
                     </div>
@@ -329,8 +338,10 @@
 
     </div>
 </div>    
-<!--Clouse Product card  -->
+<!--Clouse latest products  -->
 <!-- CLOUSE FEATURED PRODUCT  -->
+
+<!-- PABAIGA -->
 
 
 <!-- TESTIMONIAL -->
@@ -479,9 +490,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="./POLICIES/Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./POLICIES/Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./POLICIES/Returns.php">Returns Policy</a></li>
                     <li><a class="text-decoration-none text-secondary" href="./PAGES/contact.php">Contact</a></li>
                 </ul>
             </div>
@@ -503,11 +514,6 @@
 
 </footer>
 <!-- END FOOTER -->
-
-
-
-
-
 
 
 

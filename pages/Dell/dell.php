@@ -204,7 +204,7 @@
                             <h1 class="shop-item-price">1400</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="../Tablets/imagesTablet/dellTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Tablets/imagesTablet/dellTablet1.jpg"> </div>
                     <div class="p-about shop-item-details">
                         <p>Series	9PT1X
                             Brand	Dell
@@ -214,7 +214,8 @@
                             16GB LPDDR3
                             Intel Core i7 (10th Gen) i7-10610U Quad-core (4 Core) 1.8GHz
                             512GB
-                            Windows 10 Pro (English/French/Spanish)</p>
+                            Windows 10 Pro (English/French/Spanish)
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -236,7 +237,8 @@
                     <div class="p-about shop-item-details">
                         <p>About this item
                             11.6 FHD (1920x1080) 16:9 Direct-View outdoor-readable display w/gloved multi-touch AG/AR/AS/Polarizer and Gorilla Glass
-                            Fully-rugged tablet can tackle the most demanding rugged tasks, Microsoft Windows 10 Pro 64-bit pre-installed, Tablet supports a secondary Li-ion battery.</p>
+                            Fully-rugged tablet can tackle the most demanding rugged tasks, Microsoft Windows 10 Pro 64-bit pre-installed, Tablet supports a secondary Li-ion battery.
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -319,8 +321,10 @@
                         </div>
                     </div>
                     <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Desktops/desktop-images/Dell01.jpg"> </div>
+                    <div class="p-about shop-item-details">"> </div>
                     <div class="p-about shop-item-details">
                         <p>POWERFUL PROCESSOR - Configured with top of the line series processor for lightning fast, reliable and consistent performance to ensure an exceptional PC
+                           
                             </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
@@ -403,7 +407,7 @@
 <!-- cartLAPTOPS -->
 <h2 class="container text-center p-5 brand text-success ">LAPTOPS</h2>
 
-<div class="container bg beige pt-5 pb-5  mb-5">
+<div class="container bg beige pt-5 pb-5 mb-5">
     <div class="row  gy-5">
         
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -411,19 +415,22 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 15 5515</h5> <span>Laptop</span>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">399</h1>
+                            <h1 class="shop-item-price">907</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet1.png"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell01.webp"> </div>
+                    <div class="p-about shop-item-details">"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            2MP primary camera and 0.3MP secondary camera
-                            10 inch Capacitive Touchscreen with 1280 x 800 pixels with Auto Rotate
-                            8 GB (Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS) and expandable upto 32GB
-                            4600 mAh Lithium - Polymer uptp 5 hours(video)</p>
+                        <p>15.6-inch FHD (1920 x 1080) Anti-Glare LED Backlight Touch Narrow Border WVA Display
+                            AMD Ryzen 7 5700U 8-core/16-thread Mobile Processor with Radeon Graphics
+                            16GB 3200MHz DDR4, 512GB PCIe NVMe Class 35 Solid State Drive
+                            AMD Radeon Graphics with shared graphics memory
+                            802.11ac 2x2 WiFi + Bluetooth 4.1
+                           
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -435,19 +442,17 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 5000 2-in-1 14"  HD</h5> <span>Laptop</span>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">189</h1>
+                            <h1 class="shop-item-price">679</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            Brilliant 9.7-inch diagonal LED backlit multitouch display
-                            Seamless multitasking with HP webOS 3.0 and essential productivity apps
-                            Exclusive Beats Audio for studio-quality sound
-                            Blazing fast Qualcomm Snapdragon dual-CPU APQ8060 1.2GHz processor.</p>
+                        <p>【15.6" diagonal HD Display】1366 x 768 resolution boasts impressive color and clarity, Anti-Glare Energy-efficient LED screen.
+                            【4GB DDR4 RAM】Plenty of high-bandwidth RAM to smoothly run your games as well as multiple programs. 【 128GB PCIe SSD】Save files fast and store more data. 
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -459,22 +464,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Newest Dell Inspiron 3000 Premium</h5> <span>Laptop</span>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">560</h1>
+                        <h1 class="shop-item-price">758</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/LaptopDell03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	1PH94UT#ABA
-                        Brand	HP
-                        Screen Size	12.3 Inches
-                        Operating System	Win 10 pro
-                        Memory Storage Capacity	8 GB
-                        About this item
-                        HP SmartBuy 1012 i5-7300U 12.3 8GB/256 PC Core i5-7300U, 12.3 WQXGA BV LED UWVA, UMA, Webcam, 8GB DDR3 RAM, 256GB SSD, BT, 4C Battery, Win 10 PRO 64, 3yr Warranty U.S
-                        - English localization</p>
+                    <p>【Dell Inspiron Laptop】16GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once; 1TB PCIe Solid State Drive allows to fast bootup and data transfer
+                        【11th Generation Processor】11th Generation Intel Core i5-1135G7 Quad-Core Processor (4 Cores, 8MB Cache, 8 Threads, Base Frequency at 2.4 GHz, up to 4.2 GHz at Maximum Turbo Speed)</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -487,18 +486,15 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 3593 15.6"</h5> <span>Laptop</span>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">364</h1>
+                        <h1 class="shop-item-price">749</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        Windows 8 Pro 32
-                        Intel Atom Z2760 (1.5 GHz, up to 1.8 GHz using Intel Burst Technology and Intel Hyper-Threading Technology, 1 MB cache, 2 cores)
-                        10.1 diagonal WXGA wide-viewing angle (1280 x 800); Ultra- Wide-viewing angle.</p>
+                    <p>Full-size non-backlit Keyboard with numeric keypad. 802.11 Dual Band Wireless-AC WLAN, Stereo Speakers, Built-in HD Webcam, 10/100/1000GB Ethernet LAN;USB 3.2 Gen 1 Type A (x2), USB 2.0 Type A (x1), HDMI (x1) - SD Media Card Reader (SD, SDHC, SDXC) - 10/100/1000 Mbps- 1 combo headphone / microphone jack</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -589,9 +585,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.php">Returns Policy</a></li>
                     <li><a class="text-decoration-none text-secondary" href="../contact.php">Contact</a></li>
                 </ul>
             </div>

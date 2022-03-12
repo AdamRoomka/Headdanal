@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
     <link rel="stylesheet" href="../PAGES/pages.css">
-    <link rel="stylesheet" href="../main.css">
     <script src="../main.js"></script>
     
-    <title>About us</title>
+    <title>HomePage</title>
     <link rel="icon" href="../main-images/green.png">
 </head>
 <body>
-<div id="transparent"></div>
+    <div id="transparent"></div>
 <!-- TOP NAV -->
     <nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
         <div class="container">
@@ -56,7 +55,7 @@
                         echo '
                         <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
                         echo '
-                        <a class="btn nav-icon position-relative" href="../registration/registration.php">Create account!</a>';
+                        <a class="btn nav-icon position-relative text-decoration-none" href="../registration/registration.php">Create account!</a>';
                     };
                     ?>
                 </div>
@@ -80,14 +79,14 @@
         </div>
     </div>
     <!-- close Modal search -->
-
-<!-- modal cart -->
+    
+    <!-- modal shopping cart -->
 <div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
-          
+          <h5 class="modal-title" id="cartModal">
             <section class="container content-section">
                 <h2 class="section-header">CART</h2>
                 <div class="cart-row">
@@ -101,23 +100,23 @@
                     <strong class="cart-total-title">Total</strong>
                     <span class="cart-total-price">$0</span>
                 </div>
-                <button class="btn btn-success btn-purchase" id="btn" type="button">PURCHASE</button>
+                <button class="btn btn-primary btn-purchase" id="btn" type="button">PURCHASE</button>
             </section>
-         
+          </h5>
         </div>
       </div>
     </div>
 </div>
-<!-- close modal cart -->
+<!-- clouse modal shopping cart -->
 
-<div class="hide" id="hide">
+    <div class="hide" id="hide">
         <div class="registration">
             <!-- Login -->
             <div class="h-100 me-2" id="login">
                 <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
                 <?php include('../php/errorslogin.php'); ?>
-                <form method="post" action="about.php">
+                <form method="post" action="index.php">
                     <div class="form-outline mb-5 d-flex justify-content-center">
                         <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
@@ -140,9 +139,8 @@
 
 <!-- CLOSE TOP NAV -->
 
-
     <!-- HEADER-BOTTOM -->
-    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light ">
+    <nav class="navbar sticky-lg-top  navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand text-success" href="../index.php">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,17 +152,17 @@
                 <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="../ABOUT-US/about.php">About us</a>
               </li>
               
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Category
+                    Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Tablets/tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Tablets/tablets.php">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Desktops/desktop.php">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Laptop/laptop.php">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -173,46 +171,41 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Lenovo/lenovo.php">LENOVO</a></li>
-               </ul>
-              </li>
-            </ul>
-          </div>
+                  <li><a class="dropdown-item" href="../PAGES/Apple/apple.php">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Dell/dell.php">DELL</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Hp/hp.php">HP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Lenovo/lenovo.php">LENOVO</a></li>
+                </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
-          
+      </div>
+  </nav>
 <!-- CLOUSE HEADER-BOTTOM  -->
 
-
-
-<div class="container about-us mb-5">
-    <div class="row mt-5 mb-5">
-           <div class="col-lg-6 col-md-6 col-sm-12">
-               <img class="img-fluid" src="./about-us.jpg" alt="" srcset="">
-           </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 ">
-            <h3 class="mb-4">ABOUT US</h3>
-            <p><i>easy.TECH</i> was founded in 2007. Our plan was simple: let's make it easy for people to buy PC online, affordably with delivery to their door.</p>   
-            <p>Now <i>easy.TECH </i>is one of the fastest growing IT retailer we are committed to provide the best customer service and competitive price in the market. We supply a wide range of notebook, desktop and tablets from major vendor. We are the premier notebook reseller for leading brands such as Apple, Dell, HP, Lenovo. </p>  
-            <p> Our products and sales team reflect reliability, competitive prices and supportive customer service.</p>
-
-            <h4 class="mt-4">Family Affair</h4>
-            <p>Even though we command a global reach, easy.TECH still retains the feel of a small, neighborhood mom & pop shop. We are a proud, family owned business built on the pillars of honesty and treating people right.</p> 
-
-            <h4 class="mt-4">Shipping</h4>
-            <p>We ship around the globe. We ship most international packages via DHL. Free Expedited Shipping for most orders over €200.</p>
-        
-        
-            <h4 class="mt-4">Returns</h4>
-            <p>If you are dissatisfied with your purchase for any reason, you may return it to <i>easy.TECH</i> within 30 days of the delivery date.</p>
-        </div>
+<main>    
+    <div class="container returns mb-5 mt-3">
+        <h2 class="text-center text-success p-4 mb-4 mt-4" >Return policy</h2>
+        <h3 class="mt-5  text-success">Standard Return Policy</h3>
+        <p>
+            Items covereeasy.Tech's Standard Return Policy, those products for which easy.Tech states "This item is covered by easy.Tech's Standard Return Policy", can be returned for a refund or replacement. You must request a return within 30 days of the delivery date.
+        </p>
+        <p>
+            Product Lifespan: Using PC components and systems for cryptocurrency mining is known to significantly decrease the lifespan of the product due to overuse. This includes, but is not limited to: CPUs, video cards, solid-state and hard disk drives. In general, easy.Tech will not accept returns of products which have exceeded the product’s lifespan due to overuse.
+        </p>
+        <h3 class="mt-5  text-success">Open Box Return Policy</h3>
+        <p>
+            For products labeled as “Open Box”, easy.Tech accepts all returns within the product’s eligible return period. This applies to all Open Box products sold and shipped by easy.Tech. Shop with confidence with Hassle-Free Returns.
+        </p>
+        <h3 class="mt-5  text-success">Replacement Only Return Policy</h3>
+        <p>
+            Items covered by easy.Tech's Replacement Only Return Policy, those products for which easy.Tech states "This item is covered by easy.Tech's Replacement Only Return Policy", can only be returned for a replacement. You must request a return within 30 days of the delivery date.
+        </p>
+        <p class="mb-5">
+            Product Lifespan: Using PC components and systems for cryptocurrency mining is known to significantly decrease the lifespan of the product due to overuse. This includes, but is not limited to: CPUs, video cards, solid-state and hard disk drives. In general, easy.Tech will not accept returns of products which have exceeded the product’s lifespan due to overuse.
+        </p>
     </div>
-</div>
-
-
+</main>
 
 <!-- FOOTER -->
 <footer class="bg beige" id="tempaltemo_footer">
@@ -222,7 +215,7 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-success border-bottom pb-3 border-light logo">easy.TECH</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#"> About us</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../ABOUT-US/about.php"> About us</a></li>
                        
                     <li class="adress pt-3">
                         <p>Gedimino pr. 24, Vilnius<br>Lithuania</p>            
@@ -265,10 +258,10 @@
                         }else{
                             echo '
                             <li>
-                                <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
+                                <a onclick="registration()" class="text-decoration-none text-secondary" href="#">Sign in</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
+                                <a class="text-decoration-none text-secondary" href="../registration/registration.php">Create account</a>
                             </li>';
                         };
                     ?>
@@ -291,9 +284,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="../POLICIES/Terms.php">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Privacy.php">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Returns.php">Returns Policy</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="./Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href=".Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
                     <li><a class="text-decoration-none text-secondary" href="../PAGES/contact.php">Contact</a></li>
                 </ul>
             </div>
@@ -316,8 +309,8 @@
 </footer>
 <!-- END FOOTER -->
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="SCRIPT/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function closing(){
             document.querySelector("#transparent").classList.remove("transparent");
