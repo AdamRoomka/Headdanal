@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
     <link rel="stylesheet" href="../PAGES/pages.css">
-    <link rel="stylesheet" href="../main.css">
     <script src="../main.js"></script>
     
-    <title>About us</title>
+    <title>HomePage</title>
     <link rel="icon" href="../main-images/green.png">
 </head>
 <body>
-<div id="transparent"></div>
+    <div id="transparent"></div>
 <!-- TOP NAV -->
     <nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
         <div class="container">
@@ -56,7 +55,7 @@
                         echo '
                         <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
                         echo '
-                        <a class="btn nav-icon position-relative" href="../registration/registration.php">Create account!</a>';
+                        <a class="btn nav-icon position-relative text-decoration-none" href="../registration/registration.php">Create account!</a>';
                     };
                     ?>
                 </div>
@@ -80,14 +79,14 @@
         </div>
     </div>
     <!-- close Modal search -->
-
-<!-- modal cart -->
+    
+    <!-- modal shopping cart -->
 <div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
-          
+          <h5 class="modal-title" id="cartModal">
             <section class="container content-section">
                 <h2 class="section-header">CART</h2>
                 <div class="cart-row">
@@ -101,23 +100,23 @@
                     <strong class="cart-total-title">Total</strong>
                     <span class="cart-total-price">$0</span>
                 </div>
-                <button class="btn btn-success btn-purchase" id="btn" type="button">PURCHASE</button>
+                <button class="btn btn-primary btn-purchase" id="btn" type="button">PURCHASE</button>
             </section>
-         
+          </h5>
         </div>
       </div>
     </div>
 </div>
-<!-- close modal cart -->
+<!-- clouse modal shopping cart -->
 
-<div class="hide" id="hide">
+    <div class="hide" id="hide">
         <div class="registration">
             <!-- Login -->
             <div class="h-100 me-2" id="login">
                 <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
                 <?php include('../php/errorslogin.php'); ?>
-                <form method="post" action="about.php">
+                <form method="post" action="index.php">
                     <div class="form-outline mb-5 d-flex justify-content-center">
                         <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
@@ -140,11 +139,10 @@
 
 <!-- CLOSE TOP NAV -->
 
-
     <!-- HEADER-BOTTOM -->
-    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light ">
+    <nav class="navbar sticky-lg-top  navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand text-success" href="../index.php">easy.TECH</a>
+          <a class="navbar-brand text-success" href="#">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -154,17 +152,17 @@
                 <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="../ABOUT-US/about.php">About us</a>
               </li>
               
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Category
+                    Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Tablets/tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Tablets/tablets.php">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Desktops/desktop.php">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Laptop/laptop.php">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -173,46 +171,90 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Lenovo/lenovo.php">LENOVO</a></li>
-               </ul>
-              </li>
-            </ul>
-          </div>
+                  <li><a class="dropdown-item" href="../PAGES/Apple/apple.php">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Dell/dell.php">DELL</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Hp/hp.php">HP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Lenovo/lenovo.php">LENOVO</a></li>
+                </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
-          
+      </div>
+  </nav>
 <!-- CLOUSE HEADER-BOTTOM  -->
 
-
-
-<div class="container about-us mb-5">
-    <div class="row mt-5 mb-5">
-           <div class="col-lg-6 col-md-6 col-sm-12">
-               <img class="img-fluid" src="./about-us.jpg" alt="" srcset="">
-           </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 ">
-            <h3 class="mb-4">ABOUT US</h3>
-            <p><i>easy.TECH</i> was founded in 2007. Our plan was simple: let's make it easy for people to buy PC online, affordably with delivery to their door.</p>   
-            <p>Now <i>easy.TECH </i>is one of the fastest growing IT retailer we are committed to provide the best customer service and competitive price in the market. We supply a wide range of notebook, desktop and tablets from major vendor. We are the premier notebook reseller for leading brands such as Apple, Dell, HP, Lenovo. </p>  
-            <p> Our products and sales team reflect reliability, competitive prices and supportive customer service.</p>
-
-            <h4 class="mt-4">Family Affair</h4>
-            <p>Even though we command a global reach, easy.TECH still retains the feel of a small, neighborhood mom & pop shop. We are a proud, family owned business built on the pillars of honesty and treating people right.</p> 
-
-            <h4 class="mt-4">Shipping</h4>
-            <p>We ship around the globe. We ship most international packages via DHL. Free Expedited Shipping for most orders over €200.</p>
-        
-        
-            <h4 class="mt-4">Returns</h4>
-            <p>If you are dissatisfied with your purchase for any reason, you may return it to <i>easy.TECH</i> within 30 days of the delivery date.</p>
-        </div>
+<main>
+    <div class="container terms mb-5 mt-3">
+        <h2 class="text-center text-success p-4 mb-4 mt-4"><em>easy</em>.TECH Terms and Conditions Policy </h2>
+        <p>
+            Welcome to easy.Tech These terms and conditions outline the rules and regulations for the use of easy.Tech’s Website.
+        </p>
+        <p><em>easy</em>.Tech is located at:</p>
+        <h5 class="pb-2 text-center text-success mb-3">Gedimino pr.24, <br> Vilnius <br> Lithuania</h5>
+        <p>
+            By accessing this website we assume you accept these terms and conditions in full. Do not continue to use easy.Tech’s website if you do not accept all of the terms and conditions stated on this page.          
+        </p>
+        <p>
+            The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: Client, You and Your refers to you, the person accessing this website and accepting the Company’s terms and conditions. The Company, Ourselves, We, Our and Us, refers to our Company. Party, Parties, or Us, refers to both the Client and ourselves, or either the Client or ourselves.
+        </p>
+        <p>
+            All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law of Lithuania.
+        </p>
+        <p>
+            Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+        </p>
+        <h3 class="mt-5  text-success">Cookies</h3>
+        <p>
+            We employ the use of cookies. By using easy.Tech’s website you consent to the use of cookies in accordance with easy.Tech’s privacy policy. Most of the modern day interactive websites use cookies to enable us to retrieve user details for each visit.
+        </p>
+        <p>
+            Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.
+        </p>
+        <h3 class="mt-5 text-success">License</h3>
+        <p>
+            Unless otherwise stated, easy.Tech and/or its licensors own the intellectual property rights for all material on easy.Tech.
+        </p>
+        <p>
+            All intellectual property rights are reserved. You may view and/or print pages from easy.Tech for your own personal use subject to restrictions set in these terms and conditions.
+        </p>
+        <h5  class="mt-2">You must not:</h5>
+        <ul>
+            <li>Republish material from easy.Tech.
+            </li>
+            <li>Sell, rent or sub-license material from easy.Tech.
+            </li>
+            <li>Reproduce, duplicate or copy material from easy.Tech.
+            </li>
+            <li>Redistribute content from easy.Tech (unless content is specifically made for redistribution).
+            </li>
+        </ul>
+        <h3  class="mt-5 text-success">Disclaimer</h3>
+        <p>
+            To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).
+        </p>
+        <h5  class="mt-4">Nothing in this disclaimer will:</h5>
+        <ul>
+            <li>Limit or exclude our or your liability for death or personal injury resulting from negligence.
+            </li>
+            <li>Limit or exclude our or your liability for fraud or fraudulent misrepresentation.
+            </li>
+            <li>Limit any of our or your liabilities in any way that is not permitted under applicable law.
+            </li>
+            <li>Or exclude any of our or your liabilities that may not be excluded under applicable law.
+            </li>
+        </ul>
+        <h5 class="mt-4">The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer:</h5>
+        <ul>
+            <li>are subject to the preceding paragraph; and
+            </li>
+            <li>govern all liabilities arising under the disclaimer or in relation to the subject matter of this disclaimer, including liabilities that arise in contract, tort (including negligence) and for breach of statutory duty.
+            </li>
+        </ul>
+        <p class="mb-5">
+            To the extent that the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.
+        </p>
     </div>
-</div>
-
-
+</main>
 
 <!-- FOOTER -->
 <footer class="bg beige" id="tempaltemo_footer">
@@ -222,7 +264,7 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-success border-bottom pb-3 border-light logo">easy.TECH</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#"> About us</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../ABOUT-US/about.php"> About us</a></li>
                        
                     <li class="adress pt-3">
                         <p>Gedimino pr. 24, Vilnius<br>Lithuania</p>            
@@ -265,10 +307,10 @@
                         }else{
                             echo '
                             <li>
-                                <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
+                                <a onclick="registration()" class="text-decoration-none text-secondary" href="#">Sign in</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
+                                <a class="text-decoration-none text-secondary" href="../registration/registration.php">Create account</a>
                             </li>';
                         };
                     ?>
@@ -291,9 +333,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="../POLICIES/Terms.php">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Privacy.php">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Returns.php">Returns Policy</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./Returns.php">Returns Policy</a></li>
                     <li><a class="text-decoration-none text-secondary" href="../PAGES/contact.php">Contact</a></li>
                 </ul>
             </div>
@@ -316,8 +358,8 @@
 </footer>
 <!-- END FOOTER -->
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="SCRIPT/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function closing(){
             document.querySelector("#transparent").classList.remove("transparent");
