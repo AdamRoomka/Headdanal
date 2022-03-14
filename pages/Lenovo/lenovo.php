@@ -408,7 +408,7 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Lenovo Chromebook C330 2-in-1"</h5> <span>Laptop</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Lenovo Chromebook C330 2-in-1</h5> <span>Laptop</span>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">248</h1>
