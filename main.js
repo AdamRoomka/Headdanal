@@ -11,7 +11,6 @@ function ready() {
 	for (var i = 0; i < removeCartItemButtons.length; i++) {
 		var button = removeCartItemButtons[i];
 		button.addEventListener('click', removeCartItem);
-		button.addEventListener('click', removeCartfromLocalStorage);
 	}
 
 	var quantityInputs = document.getElementsByClassName('cart-quantity-input');
@@ -35,10 +34,14 @@ function purchaseClicked() {
 	while (cartItems.hasChildNodes()) {
 		cartItems.removeChild(cartItems.firstChild);
 	}
+	let productNumbers = localStorage.getItem('cartNumbers');
+	localStorage.setItem('cartNumbers', productNumbers = 0);
+	localStorage.removeItem('cart');
 	updateCartTotal();
 }
 
-function removeCartItem(event) {
+function removeCartItem(event, id) {
+	console.log(id);
 	var buttonClicked = event.target;
 	buttonClicked.parentElement.parentElement.remove();
 
@@ -48,10 +51,20 @@ function removeCartItem(event) {
 	updateCartTotal();
 }
 
-function removeCartfromLocalStorage(event) {
+function removeCartfromLocalStorage(cart, id) {
 	
-	let cart = localStorage.getItem('cart');
-	cart.localStorage.setItem('cart', title);
+	var cart = localStorage.getItem("cart");
+	cart=JSON.parse(cart);
+
+	for(let i=0; i< cart.length; i++){
+		
+		if(cart[i].id === id){			
+			cart.splice(i, 1);
+			console.log(cart);
+			localStorage.setItem("cart", JSON.stringify(cart));
+		}
+		
+	}
 
 	updateCartTotal();
 }
@@ -67,19 +80,19 @@ function quantityChanged(event) {
 function addToCartClicked(event) {
 	var button = event.target;
 	var shopItem = button.parentElement.parentElement;
+	var id = shopItem.getElementsByClassName('shop-item-id')[0].innerText;
 	var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
 	var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
 	var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-	addItemToCart(title, price, imageSrc);
-	addItemToLocalStorage(title, price, imageSrc);
+	addItemToCart(title, price, imageSrc, id);
+	addItemToLocalStorage(title, price, imageSrc, id);
 	updateCartTotal();
 }
 
-
-
-function addItemToLocalStorage(title, price, imageSrc){
+function addItemToLocalStorage(title, price, imageSrc, id){
 	let item =
 		{
+			id: id,
 			title: title,
 			price: price,
 			imageSrc:imageSrc,
@@ -93,8 +106,8 @@ function addItemToLocalStorage(title, price, imageSrc){
 		
 		for(var i=0;i<cart.length;i++) {
 			if(cart[i].title===item.title) {
-				cart[i].amount++
-				break
+				cart[i].amount++;
+				break;
 			}
 		}
 		
@@ -103,11 +116,11 @@ function addItemToLocalStorage(title, price, imageSrc){
 		}
 		localStorage.setItem('cart',JSON.stringify(cart))
 	}
-	
 }
 
 
-function addItemToCart(title, price, imageSrc) {
+
+function addItemToCart(title, price, imageSrc, id) {
 	var cartRow = document.createElement('div');
 	cartRow.classList.add('cart-row');
 	var cartItems = document.getElementsByClassName('cart-items')[0];
@@ -119,15 +132,23 @@ function addItemToCart(title, price, imageSrc) {
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger d-flex align-items-center" type="button">REMOVE</button>
+            <button class="btn btn-danger d-flex align-items-center" id=${id} type="button">REMOVE</button>
         </div>`;
 	cartRow.innerHTML = cartRowContents;
 	cartItems.append(cartRow);
-	cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+	var buttonid = cartRow.getElementsByClassName('btn-danger')[0].id;
+
+	cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', (event) =>{
+		removeCartItem(event, buttonid);
+
+	});
+	 
+	cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', (event) =>{
+		removeCartfromLocalStorage(event, buttonid);
+		});
+	 
 	cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
 }
-
-let cart = document.querySelector('#cart');
 
 function updateCartTotal() {
 	var cartItemContainer = document.getElementsByClassName('cart-items')[0];
@@ -176,9 +197,10 @@ function onLoadcartNumbers() {
 
 	if(productNumbers){
 		document.querySelector('.cart-basket').textContent = productNumbers;
-
-		//console.log(document.querySelector('.cart-basket').textContent = productNumbers);
 	}
+}
+function testas(){
+	console.log("Tomek");
 }
 
 function onLoadcartItems() {
@@ -198,13 +220,30 @@ function onLoadcartItems() {
         <span class="cart-price cart-column">${cart[i].price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" min=1 type="number" value="${cart[i].amount}">
-            <button class="btn btn-danger d-flex align-items-center" type="button">REMOVE</button>
-        </div></div>`)
+            <button class="btn btn-danger d-flex align-items-center" id=${cart[i].id}  type="button">REMOVE</button>
+        </div></div>`)	
+		
 	}
-	cartHTML.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
-	cartHTML.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
-}
+
+	let deletebuttons = cartHTML.getElementsByClassName('btn-danger');
+
+	for (i=0; i<deletebuttons.length; i++){
+		let tempid = deletebuttons[i].id;
+		deletebuttons[i].addEventListener('click', (event) =>{
+			removeCartItem(event, tempid);
+		});
+		 
+		deletebuttons[i].addEventListener('click', (event) =>{
+			removeCartfromLocalStorage(event, tempid);
+			});
 	
+		cartHTML.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
+	}
+
+	
+
+}
+
 onLoadcartNumbers();
 onLoadcartItems();
 };
