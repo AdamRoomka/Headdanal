@@ -198,6 +198,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Apple iMac 27-Inch Desktop</h5> <span>Apple iMac</span>
+                            <div class="shop-item-id" style="display: none;">01</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1337</h1>
@@ -221,6 +222,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">2020 Apple iMac with Retina 5K</h5> <span>Apple iMac</span>
+                            <div class="shop-item-id" style="display: none;">02</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">700</h1>
@@ -245,6 +247,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Apple iMac ME088LL</h5> <span>Apple iMac</span>
+                        <div class="shop-item-id" style="display: none;">03</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">800</h1>
@@ -270,6 +273,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Apple Mac Mini Desktop</h5> <span>Apple Mac </span>
+                        <div class="shop-item-id" style="display: none;">04</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">328</h1>
@@ -303,6 +307,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Optiplex 7040 Business</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">05</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">247</h1>
@@ -326,6 +331,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell XPS 8940 Desktop Computer</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">06</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
@@ -349,6 +355,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 3880 Desktop Computer</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">07</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">800</h1>
@@ -372,6 +379,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Precision 5820 MT Tower</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">08</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">1400</h1>
@@ -404,6 +412,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP Pavilion Desktop</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">09</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">399</h1>
@@ -424,6 +433,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP 27 Pavilion All-in-One PC</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">10</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1400</h1>
@@ -444,6 +454,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP Desktop M01-F0</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">11</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">290</h1>
@@ -467,6 +478,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">2022 HP TP01 Pavilion Business Desktop</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">12</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">800</h1>
@@ -497,6 +509,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">13</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">800</h1>
@@ -519,6 +532,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre V50s</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">14</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1500</h1>
@@ -541,6 +555,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaCentre AIO 3 </h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">15</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">749</h1>
@@ -562,6 +577,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre M720 </h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">16</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">899</h1>

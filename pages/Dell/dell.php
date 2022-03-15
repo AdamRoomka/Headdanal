@@ -199,6 +199,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7210 Tablet</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">37</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1400</h1>
@@ -228,6 +229,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7212 Rugged</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">38</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
@@ -251,6 +253,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7200</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">39</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">399</h1>
@@ -282,6 +285,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7000 7320</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">40</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">328</h1>
@@ -315,6 +319,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Optiplex 7040 Business</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">05</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">247</h1>
@@ -338,6 +343,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell XPS 8940 Desktop Computer</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">06</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
@@ -361,6 +367,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 3880 Desktop Computer</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">07</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">800</h1>
@@ -384,6 +391,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Precision 5820 MT Tower</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">08</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">1400</h1>
@@ -416,6 +424,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 15 5515</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">21</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">907</h1>
@@ -443,6 +452,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 5000 2-in-1 14"  HD</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">22</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">679</h1>
@@ -465,6 +475,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">2022 Newest Dell Inspiron 3000 Premium</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">23</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">758</h1>
@@ -487,6 +498,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 3593 15.6"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">24</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">749</h1>
