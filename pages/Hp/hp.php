@@ -199,6 +199,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">41</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">399</h1>
@@ -223,6 +224,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">42</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">189</h1>
@@ -247,6 +249,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">43</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">560</h1>
@@ -276,6 +279,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">44</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">364</h1>
@@ -310,6 +314,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP Pavilion Desktop</h5> <span>Desktop</span>
+                            <div class="shop-item-id" style="display: none;">09</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">399</h1>
@@ -332,6 +337,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP 27 Pavilion All-in-One PC</h5> <span>Desktop</span>
+                            <div class="shop-item-id" style="display: none;">10</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1400</h1>
@@ -354,6 +360,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP Desktop M01-F0</h5> <span>Desktop</span>
+                        <div class="shop-item-id" style="display: none;">11</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">290</h1>
@@ -378,6 +385,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">2022 HP TP01 Pavilion Business Desktop</h5> <span>Desktop</span>
+                        <div class="shop-item-id" style="display: none;">12</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">800</h1>
@@ -409,6 +417,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">2021 Newest HP 14"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">25</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">379</h1>
@@ -430,6 +439,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">2021 Newest HP 15.6"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">26</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">549</h1>
@@ -451,6 +461,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">2022 Newest HP 15.6"</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">27</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">399</h1>
@@ -473,6 +484,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP Pavilion 15"</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">28</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">888</h1>

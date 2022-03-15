@@ -199,6 +199,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo 7" Tab M7 32GB</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">45</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">89</h1>
@@ -228,6 +229,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo 10.3" Smart Tab M10</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">46</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">269</h1>
@@ -252,6 +254,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo 8" Tab M8 HD</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">47</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">299</h1>
@@ -277,6 +280,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo Tab M10 Plus</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">48</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">179</h1>
@@ -309,6 +313,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre</h5> <span>Desktop</span>
+                            <div class="shop-item-id" style="display: none;">13</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">800</h1>
@@ -332,6 +337,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre V50s</h5> <span>Desktop</span>
+                            <div class="shop-item-id" style="display: none;">14</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1500</h1>
@@ -355,6 +361,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaCentre AIO 3</h5> <span>Desktop</span>
+                        <div class="shop-item-id" style="display: none;">15</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">749</h1>
@@ -377,6 +384,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre M720</h5> <span>Desktop</span>
+                        <div class="shop-item-id" style="display: none;">16</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">899</h1>
@@ -409,6 +417,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo Chromebook C330 2-in-1</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">29</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">248</h1>
@@ -430,6 +439,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaPad 3i 15.6"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">30</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">570</h1>
@@ -452,6 +462,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaPad 3 Laptop, 14.0"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">31</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">520</h1>
@@ -476,6 +487,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo Flex 5 14 2-in-1</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">32</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">738</h1>
