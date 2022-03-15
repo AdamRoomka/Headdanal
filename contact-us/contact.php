@@ -134,9 +134,9 @@
                   Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./Tablets/tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="./Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="./Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Tablets/tablets.php">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Desktops/desktop.php">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Laptop/laptop.php">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -145,10 +145,10 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="./Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="./Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="./Lenovo/lenovo.php">LENOVO</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Apple/apple.php">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Dell/dell.php">DELL</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Hp/hp.php">HP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Lenovo/lenovo.php">LENOVO</a></li>
                 </ul>
             </ul>  
           </div>
@@ -168,7 +168,7 @@
                             <div class="card-body">
                                 <div class="card-header beige text-white mt-3"><i class="fa fa-envelope"></i> Contact us.
                                 </div>
-                                <!-- <h4 class="sent-notification"></h4> -->
+                                
                                 <form id="myForm" class="mt-2">
                                     <div class="form-group">
                                         <label>Name</label>
@@ -190,6 +190,7 @@
                                     <button class="btn btn-success text-right mt-2" type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
                                 </form>
                             </div>
+                            <p class="sent-notification text-success"></p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-12">
@@ -222,7 +223,7 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-success border-bottom pb-3 border-light logo">easy.TECH</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#"> About us</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../ABOUT-US/about.php"> About us</a></li>
                        
                     <li class="adress pt-3">
                         <p>Gedimino pr. 24, Vilnius<br>Lithuania</p>            
@@ -243,9 +244,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Products</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="./Tablets/tablets.php">Tablets</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="./Laptop/laptop.php">Laptops</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="./Desktops/desktop.php">Desktops</a></li>  
+                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Tablets/tablets.php">Tablets</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Laptop/laptop.php">Laptops</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Desktops/desktop.php">Desktops</a></li>  
                 </ul>
             </div>
 
