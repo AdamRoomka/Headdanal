@@ -12,7 +12,6 @@
     
     <link rel="icon" href="../../main-images/green.png">
     <link rel="stylesheet" href="../pages.css">
-    <link rel="stylesheet" href="../../main.css">
     <script src="../../main.js" ></script>
     
     <title>Desktop</title>
@@ -126,7 +125,7 @@
                     </div>
                     <div class="row d-flex justify-content-around m-4">
                         <div class="col-6 mt-1">
-                            <a href="../registration/registration.php">Create your account</a>
+                            <a href="../../registration/registration.php">Create your account</a>
                         </div>
                         <div class="col-6 d-flex justify-content-end h-25">
                             <button type="submit" class="btn btn-success" name="login_user">Login</button>
@@ -193,21 +192,24 @@
 
 <div class="container bg beige pt-5 pb-5">
     <div class="row  gy-5">
-        
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                 <div class="container d-flex justify-content-center">
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 11" iPad Pro M1</h5> <span>iPad Pro</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Apple iMac 27-Inch Desktop</h5> <span>Apple iMac</span>
+                            <div class="shop-item-id" style="display: none;">01</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">799</h1>
+                            <h1 class="shop-item-price">1337</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="./imagesTablet/appleTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="./desktop-images/Apple01.jfif"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Experience the next level of ultimate with the space gray Apple 11" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
+                        <p>3.4GHz quad-core Intel Core i7 (Turbo Boost up to 3.9GHz)
+                            16GB of 1600MHz DDR3 memory user-accessible SO-DIMM
+                            
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -219,19 +221,20 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 10.2" iPad</h5> <span>iPad</span>
+                            <h5 class="shop-item-title text-success mb-0 ">2020 Apple iMac with Retina 5K</h5> <span>Apple iMac</span>
+                            <div class="shop-item-id" style="display: none;">02</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">489</h1>
+                            <h1 class="shop-item-price">700</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Apple02.jpg"> </div>
                     <div class="p-about shop-item-details">
-                        <p>The Apple 10.2" iPad features the Retina display with a 2160 x 1620 resolution for crisp details and vivid colors, making it an ideal companion for watching movies, creating content, and much more. Key Features
-                            10.2" Multi-Touch Retina Display
-                            2160 x 1620 Screen Resolution (264 ppi)
-                            Apple A13 Bionic Chip
-                            256GB Storage Capacity.</p>
+                        <p>27-inch (diagonal) 5120-by-2880 Retina 5K display
+                            3.1GHz 6-core 10th-generation Intel Core i5
+                            AMD Radeon Pro 5300 graphics
+                            Ultrafast SSD storage
+                            Two Thunderbolt 3 (USB-C) ports.</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -243,15 +246,20 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 8.3" iPad mini</h5> <span>iPad</span>
+                        <h5 class="shop-item-title text-success mb-0 ">Apple iMac ME088LL</h5> <span>Apple iMac</span>
+                        <div class="shop-item-id" style="display: none;">03</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">499</h1>
+                        <h1 class="shop-item-price">800</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Apple03.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Mega power now comes in a mini size with the purple Apple 8.3" iPad mini, which lets you bring ideas to life in the palm of your hand. Supercharged by Apple's A15 Bionic chip with a 6-Core CPU, 5-Core GPU, a Neural Engine, an IPS display, Wi-Fi 6 (802.11ax), a 12MP Ultra-Wide camera with Center Stage, 5 Gb/s USB Type-C connectivity, and all-day battery life.</p>
+                    <p>27" Desktop, 3.2GHz Intel Core i5
+                        16GB Memory, 1TB HDD
+                        NVIDIA GeForce GT 755M graphics processor
+                        Connectivity includes four USB 3.0 ports, dual Thunderbolt ports, Gigabit Ethernet, 802.11ac Wi-Fi (802.11a/b/g/n compatible), and Bluetooth 4.0.
+                       </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -264,15 +272,19 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 12.9" iPad Pro M1</h5> <span>iPad Pro</span>
+                        <h5 class="shop-item-title text-success mb-0 ">Apple Mac Mini Desktop</h5> <span>Apple Mac </span>
+                        <div class="shop-item-id" style="display: none;">04</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">999</h1>
+                        <h1 class="shop-item-price">328</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Apple04.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Experience the next level of ultimate with the space gray Apple 12.9" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina XDR display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
+                    <p>2.6GHz Dual-Core Intel Core i5 processor
+                        8GB DDR3 memory / 1TB Hard Drive
+                        Up to 2560x1600 ThunderBolt resolution , one FireWire in800in port , one Gigabit Ethernet port
+                        </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -294,23 +306,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7210 Tablet</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell Optiplex 7040 Business</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">05</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">1400</h1>
+                            <h1 class="shop-item-price">247</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Dell01.jpg"> </div>
+                    <div class="p-about shop-item-details">"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Series	9PT1X
-                            Brand	Dell
-                            Generation	10th Generation
-                            Screen Size	12.3 Inches
-                            Operating System	Windows 10 Professional. About this item
-                            16GB LPDDR3
-                            Intel Core i7 (10th Gen) i7-10610U Quad-core (4 Core) 1.8GHz
-                            512GB
-                            Windows 10 Pro (English/French/Spanish)
+                        <p>POWERFUL PROCESSOR - Configured with top of the line series processor for lightning fast, reliable and consistent performance to ensure an exceptional PC
+                           
                             </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
@@ -323,17 +330,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7212 Rugged</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell XPS 8940 Desktop Computer</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">06</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Dell02.jfif"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            11.6 FHD (1920x1080) 16:9 Direct-View outdoor-readable display w/gloved multi-touch AG/AR/AS/Polarizer and Gorilla Glass
-                            Fully-rugged tablet can tackle the most demanding rugged tasks, Microsoft Windows 10 Pro 64-bit pre-installed, Tablet supports a secondary Li-ion battery.
+                        <p>11th Generation Intel Core i7-11700 processor(8-Core, 16M Cache, 2.5GHz to 4.9GHz)
+                            32GB 2933MHz DDR4, 512GB PCIe M.2 Solid State Drive + 1TB 7200 RPM SATA Hard Drive
+                            Intel UHD Graphics 750 with shared graphics memory
                             </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
@@ -346,25 +354,18 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7200</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 3880 Desktop Computer</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">07</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">399</h1>
+                        <h1 class="shop-item-price">800</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Dell03.jfif"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	7200
-                        Brand	Dell
-                        Generation	8th Generation
-                        Screen Size	12.3 Inches
-                        Operating System	Windows 10 Professional
-                        About this item
-                        Processor Manufacturer: Intel
-                        Processor Type: Core i7
-                        Processor Generation: 8th Gen
-                        Processor Model: i7-8665U
-                        Processor Speed: 1. 90 GHz</p>
+                    <p>Includes: KB 216 Keyboard and Wired Mouse
+                        Reclaim your workspace with a footprint that’s 14% smaller than the previous gen
+                        Easy connection with front side media card reader and Type A USB ports</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -377,18 +378,18 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7000 7320</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">Dell Precision 5820 MT Tower</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">08</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">328</h1>
+                        <h1 class="shop-item-price">1400</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Dell04.jfif"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        2.20 GHz processor and 16 GB memory deliver a powerful tablet performance; allows rapid switching between apps, smooth gaming experience, and effortless web browsing
-                        Save full length movies, songs and other HD content in the massive 512 GB SSD storage
-                        13" (1920 x 1200) screen.</p>
+                    <p>Intel Core i9-10900X (3.7GHz, 4.7GHz Turbo, 10C, 19.25MB Cache, HT, (165W)
+                        DDR4-2666 Non-ECC), 16GB 2X8GB DDR4 2666MHz UDIMM Non-ECC Memory
+                        2.5" 256GB SATA Class 20 Solid State Drive</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -410,19 +411,16 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">HP Pavilion Desktop</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">09</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">399</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet1.png"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Hp01.jpg"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            2MP primary camera and 0.3MP secondary camera
-                            10 inch Capacitive Touchscreen with 1280 x 800 pixels with Auto Rotate
-                            8 GB (Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS) and expandable upto 32GB
-                            4600 mAh Lithium - Polymer uptp 5 hours(video)</p>
+                        <p>BUILT RELIABLY FOR REAL-LIFE: Real-life action demands serious performance and tested durability. The HP Pavilion Desktop PC brings the latest technology and reliability from a trusted brand that protects what matters to you most.</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -434,19 +432,16 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">HP 27 Pavilion All-in-One PC</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">10</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">189</h1>
+                            <h1 class="shop-item-price">1400</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Hp02.png"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            Brilliant 9.7-inch diagonal LED backlit multitouch display
-                            Seamless multitasking with HP webOS 3.0 and essential productivity apps
-                            Exclusive Beats Audio for studio-quality sound
-                            Blazing fast Qualcomm Snapdragon dual-CPU APQ8060 1.2GHz processor.</p>
+                        <p>POWER MEETS PERFORMANCE – Leading-edge performance and cutting-edge style give this All-in-One PC the means to tackle demanding projects and enjoy movie marathons, all while looking good anywhere you put it</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -458,22 +453,18 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">HP Desktop M01-F0</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">11</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">560</h1>
+                        <h1 class="shop-item-price">290</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Hp03.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	1PH94UT#ABA
-                        Brand	HP
-                        Screen Size	12.3 Inches
-                        Operating System	Win 10 pro
-                        Memory Storage Capacity	8 GB
-                        About this item
-                        HP SmartBuy 1012 i5-7300U 12.3 8GB/256 PC Core i5-7300U, 12.3 WQXGA BV LED UWVA, UMA, Webcam, 8GB DDR3 RAM, 256GB SSD, BT, 4C Battery, Win 10 PRO 64, 3yr Warranty U.S
-                        - English localization</p>
+                    <p>AMD Ryzen 3 3200G (3.6GHz base clock, up to 4GHz max boost clock, 4 MB L3 cache, 4cores)
+                        8GB DDR4-SDRAM; 1TB HDD
+                        1 VGA; 1 HDMI 1.4b, DVD-Writer, 8 (4 SuperSpeed USB Type-A 5Gbps signaling rate, 4 USB2.0 Type-A)</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -486,18 +477,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 HP TP01 Pavilion Business Desktop</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">12</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">364</h1>
+                        <h1 class="shop-item-price">800</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Hp04.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        Windows 8 Pro 32
-                        Intel Atom Z2760 (1.5 GHz, up to 1.8 GHz using Intel Burst Technology and Intel Hyper-Threading Technology, 1 MB cache, 2 cores)
-                        10.1 diagonal WXGA wide-viewing angle (1280 x 800); Ultra- Wide-viewing angle.</p>
+                    <p>Powerful Performance with Intel Core i5-10400 6-Core 10th Gen Intel 6-Core i5-10400F processor, 2.9 GHz base frequency, up to 4.3 GHz with Intel Turbo Boost Technology, 12 MB cache, 12 Threads</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -519,23 +508,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Lenovo 7" Tab M7 32GB</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">13</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">89</h1>
+                            <h1 class="shop-item-price">800</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Lenovo01.jfif"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Stay entertained and connected in style with the Lenovo 7" Tab M7 32GB Tablet from Lenovo. 
-                            2 GHz MediaTek MT8166
-                            2GB of LPDDR4 RAM
-                            7" IPS Touchscreen Display
-                            1024 x 600 Screen Resolution
-                            32GB eMMC SSD
-                            Wi-Fi 5 (802.11ac) | Bluetooth 5.0
-                            Micro-USB 2.0 | microSD Card Slot
-                            Android 11 Go Edition</p>
+                        <p>Processor: AMD Ryzen 5 Pro 3400GE Quad Core (3.3GHz - 4.0GHz, 2MB Cache)
+                            Hard Drive: 256GB NVMe, RAM: 16GB 2666MHz; Graphics: AMD Radeon Vega 11
+                        </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -547,18 +531,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Lenovo 10.3" Smart Tab M10</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre V50s</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">14</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">269</h1>
+                            <h1 class="shop-item-price">1500</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Lenovo02.png"> </div>
                     <div class="p-about shop-item-details">
-                        <p>With a large 10.3" FHD screen, the 10.3" Smart Tab M10 FHD Plus 128GB Tablet with Alexa Smart Dock from Lenovo can be used for a whole variety of applications. Remote learning, games, reading books and magazines, streaming video. 2.3/1.8 GHz Helio P22T Octa-Core CPU
-                            4GB of RAM
-                            10.3" FHD IPS 10-Point Touch Display
-                            1920 x 1200.</p>
+                        <p>Processor: Intel Octa Core i7-10700 [8 Cores] (2.9GHz - 4.8GHz, 16MB Cache)
+                            Hard Drive: 1TB SSD; RAM: 32GB DDR4 2666MHz; Graphics: Intel UHD 630
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -570,18 +554,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Lenovo 8" Tab M8 HD </h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaCentre AIO 3 </h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">15</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">299</h1>
+                        <h1 class="shop-item-price">749</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Lenovo03.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Surf the web and watch videos on the 8" 1280 x 800 display of the Lenovo 8" Tab M8 HD 32GB Tablet (2nd Gen). This tablet is powered by a 2.0 GHz MediaTek Helio A22 Quad-Core processor, 2GB of RAM, and 32GB of eMMC storage. Key Features
-                        2.0 GHz MediaTek Helio A22 Quad-Core
-                        2GB RAM | 32GB eMMC Storage
-                        8" 1280 x 800 </p>
+                    <p>This space-saving AIO PC hides raw, unfiltered power - with an AMD Ryzen 5 55000U processor, the IdeaCentre AIO 3 thrives under heavy performance loads </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -594,16 +576,18 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Lenovo Tab M10 Plus</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">OEM Lenovo ThinkCentre M720 </h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">16</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">179</h1>
+                        <h1 class="shop-item-price">899</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./desktop-images/Lenovo04.jpg"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Premium look & feel with metal back cover and slim, narrow bezels. Enjoy your favorite videos on the 10. 3" FHD display with TDDI technology
-                        Fast and powerful Octa-Core processor with up to 2.3 GHz. Never miss a moment with 8 MP rear + 5 MP front cameras, dual microphones, and 2 side speakers tuned with Dolby Atmos.</p>
+                    <p>Processor: Intel i5-9400 Hexa Core [6 Cores] (2.9GHz - 4.1GHz, 9MB Cache)
+                        Hard Drive: 500GB SSD; RAM: 16GB DDR4-2666MHz; Optical Drive: DVD±RW
+                        </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -668,7 +652,7 @@
                                 <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
+                                <a class="text-decoration-none text-secondary" href="../../registration/registration.php">Create account</a>
                             </li>';
                         };
                     ?>
@@ -691,10 +675,10 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.php">Returns Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../contact.php">Contact</a></li>
                 </ul>
             </div>
 

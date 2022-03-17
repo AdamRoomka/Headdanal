@@ -12,7 +12,6 @@
     
     <link rel="icon" href="../../main-images/green.png">
     <link rel="stylesheet" href="../pages.css">
-    <link rel="stylesheet" href="../../main.css">
     <script src="../../main.js" ></script>
     
     <title>Dell</title>
@@ -126,7 +125,7 @@
                     </div>
                     <div class="row d-flex justify-content-around m-4">
                         <div class="col-6 mt-1">
-                            <a href="../registration/registration.php">Create your account</a>
+                            <a href="../../registration/registration.php">Create your account</a>
                         </div>
                         <div class="col-6 d-flex justify-content-end h-25">
                             <button type="submit" class="btn btn-success" name="login_user">Login</button>
@@ -199,108 +198,14 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 11" iPad Pro M1</h5> <span>iPad Pro</span>
-                        </div>
-                        <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">799</h1>
-                        </div>
-                    </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="./imagesTablet/appleTablet1.jpg"> </div>
-                    <div class="p-about shop-item-details">
-                        <p>Experience the next level of ultimate with the space gray Apple 11" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
-                    </div>
-                    <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-           
-                <div class="container d-flex justify-content-center">
-                    <div class="shop-item card p-2">
-                        <div class="p-info px-3 py-3">
-                        <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 10.2" iPad</h5> <span>iPad</span>
-                        </div>
-                        <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">489</h1>
-                        </div>
-                    </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet2.jpg"> </div>
-                    <div class="p-about shop-item-details">
-                        <p>The Apple 10.2" iPad features the Retina display with a 2160 x 1620 resolution for crisp details and vivid colors, making it an ideal companion for watching movies, creating content, and much more. Key Features
-                            10.2" Multi-Touch Retina Display
-                            2160 x 1620 Screen Resolution (264 ppi)
-                            Apple A13 Bionic Chip
-                            256GB Storage Capacity.</p>
-                    </div>
-                    <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
-                </div>
-            </div>
-            </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-           
-            <div class="container d-flex justify-content-center">
-                <div class="shop-item card p-2">
-                    <div class="p-info px-3 py-3">
-                    <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 8.3" iPad mini</h5> <span>iPad</span>
-                    </div>
-                    <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">499</h1>
-                    </div>
-                </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet3.jpg"> </div>
-                <div class="p-about shop-item-details">
-                    <p>Mega power now comes in a mini size with the purple Apple 8.3" iPad mini, which lets you bring ideas to life in the palm of your hand. Supercharged by Apple's A15 Bionic chip with a 6-Core CPU, 5-Core GPU, a Neural Engine, an IPS display, Wi-Fi 6 (802.11ax), a 12MP Ultra-Wide camera with Center Stage, 5 Gb/s USB Type-C connectivity, and all-day battery life.</p>
-                </div>
-                <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-           
-            <div class="container d-flex justify-content-center">
-                <div class="shop-item card p-2">
-                    <div class="p-info px-3 py-3">
-                    <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 12.9" iPad Pro M1</h5> <span>iPad Pro</span>
-                    </div>
-                    <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">999</h1>
-                    </div>
-                </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet4.jpg"> </div>
-                <div class="p-about shop-item-details">
-                    <p>Experience the next level of ultimate with the space gray Apple 12.9" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina XDR display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
-                </div>
-                <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- cartTABLETS clouse-->
-
-
-<!-- cartDESKTOPS -->
-<h2 class="container text-center p-5 brand text-success">DESKTOPS</h2>
-
-<div class="container bg beige pt-5 pb-5">
-    <div class="row  gy-5">
-        
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                <div class="container d-flex justify-content-center">
-                    <div class="shop-item card p-2">
-                        <div class="p-info px-3 py-3">
-                        <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7210 Tablet</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">37</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1400</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Tablets/imagesTablet/dellTablet1.jpg"> </div>
                     <div class="p-about shop-item-details">
                         <p>Series	9PT1X
                             Brand	Dell
@@ -324,12 +229,13 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7212 Rugged</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">38</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Tablets/imagesTablet/dellTablet2.jpg"> </div>
                     <div class="p-about shop-item-details">
                         <p>About this item
                             11.6 FHD (1920x1080) 16:9 Direct-View outdoor-readable display w/gloved multi-touch AG/AR/AS/Polarizer and Gorilla Glass
@@ -347,12 +253,13 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7200</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">39</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">399</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Tablets/imagesTablet/dellTablet3.jpg"> </div>
                 <div class="p-about shop-item-details">
                     <p>Series	7200
                         Brand	Dell
@@ -378,17 +285,123 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7000 7320</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">40</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">328</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Tablets/imagesTablet/dellTablet4.jpg"> </div>
                 <div class="p-about shop-item-details">
                     <p>About this item
                         2.20 GHz processor and 16 GB memory deliver a powerful tablet performance; allows rapid switching between apps, smooth gaming experience, and effortless web browsing
                         Save full length movies, songs and other HD content in the massive 512 GB SSD storage
                         13" (1920 x 1200) screen.</p>
+                </div>
+                <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cartTABLETS clouse-->
+
+
+<!-- cartDESKTOPS -->
+<h2 class="container text-center p-5 brand text-success">DESKTOPS</h2>
+
+<div class="container bg beige pt-5 pb-5">
+    <div class="row  gy-5">
+        
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                <div class="container d-flex justify-content-center">
+                    <div class="shop-item card p-2">
+                        <div class="p-info px-3 py-3">
+                        <div>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell Optiplex 7040 Business</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">05</div>
+                        </div>
+                        <div class="p-price d-flex flex-row mt-3"> <span>€</span>
+                            <h1 class="shop-item-price">247</h1>
+                        </div>
+                    </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Desktops/desktop-images/Dell01.jpg"> </div>
+                    <div class="p-about shop-item-details">"> </div>
+                    <div class="p-about shop-item-details">
+                        <p>POWERFUL PROCESSOR - Configured with top of the line series processor for lightning fast, reliable and consistent performance to ensure an exceptional PC
+                           
+                            </p>
+                    </div>
+                    <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+           
+                <div class="container d-flex justify-content-center">
+                    <div class="shop-item card p-2">
+                        <div class="p-info px-3 py-3">
+                        <div>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell XPS 8940 Desktop Computer</h5> <span>PC</span>
+                            <div class="shop-item-id" style="display: none;">06</div>
+                        </div>
+                        <div class="p-price d-flex flex-row mt-3"> <span>€</span>
+                            <h1 class="shop-item-price">1200</h1>
+                        </div>
+                    </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Desktops/desktop-images/Dell02.jfif"> </div>
+                    <div class="p-about shop-item-details">
+                        <p>11th Generation Intel Core i7-11700 processor(8-Core, 16M Cache, 2.5GHz to 4.9GHz)
+                            32GB 2933MHz DDR4, 512GB PCIe M.2 Solid State Drive + 1TB 7200 RPM SATA Hard Drive
+                            Intel UHD Graphics 750 with shared graphics memory
+                            </p>
+                    </div>
+                    <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
+                </div>
+            </div>
+            </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+           
+            <div class="container d-flex justify-content-center">
+                <div class="shop-item card p-2">
+                    <div class="p-info px-3 py-3">
+                    <div>
+                        <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 3880 Desktop Computer</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">07</div>
+                    </div>
+                    <div class="p-price d-flex flex-row mt-3"> <span>€</span>
+                        <h1 class="shop-item-price">800</h1>
+                    </div>
+                </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Desktops/desktop-images/Dell03.jfif"> </div>
+                <div class="p-about shop-item-details">
+                    <p>Includes: KB 216 Keyboard and Wired Mouse
+                        Reclaim your workspace with a footprint that’s 14% smaller than the previous gen
+                        Easy connection with front side media card reader and Type A USB ports</p>
+                </div>
+                <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+           
+            <div class="container d-flex justify-content-center">
+                <div class="shop-item card p-2">
+                    <div class="p-info px-3 py-3">
+                    <div>
+                        <h5 class="shop-item-title text-success mb-0 ">Dell Precision 5820 MT Tower</h5> <span>PC</span>
+                        <div class="shop-item-id" style="display: none;">08</div>
+                    </div>
+                    <div class="p-price d-flex flex-row mt-3"> <span>€</span>
+                        <h1 class="shop-item-price">1400</h1>
+                    </div>
+                </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Desktops/desktop-images/Dell04.jfif"> </div>
+                <div class="p-about shop-item-details">
+                    <p>Intel Core i9-10900X (3.7GHz, 4.7GHz Turbo, 10C, 19.25MB Cache, HT, (165W)
+                        DDR4-2666 Non-ECC), 16GB 2X8GB DDR4 2666MHz UDIMM Non-ECC Memory
+                        2.5" 256GB SATA Class 20 Solid State Drive</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -402,7 +415,7 @@
 <!-- cartLAPTOPS -->
 <h2 class="container text-center p-5 brand text-success ">LAPTOPS</h2>
 
-<div class="container bg beige pt-5 pb-5  mb-5">
+<div class="container bg beige pt-5 pb-5 mb-5">
     <div class="row  gy-5">
         
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -410,19 +423,23 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 15 5515</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">21</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">399</h1>
+                            <h1 class="shop-item-price">907</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet1.png"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell01.webp"> </div>
+                    <div class="p-about shop-item-details">"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            2MP primary camera and 0.3MP secondary camera
-                            10 inch Capacitive Touchscreen with 1280 x 800 pixels with Auto Rotate
-                            8 GB (Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS) and expandable upto 32GB
-                            4600 mAh Lithium - Polymer uptp 5 hours(video)</p>
+                        <p>15.6-inch FHD (1920 x 1080) Anti-Glare LED Backlight Touch Narrow Border WVA Display
+                            AMD Ryzen 7 5700U 8-core/16-thread Mobile Processor with Radeon Graphics
+                            16GB 3200MHz DDR4, 512GB PCIe NVMe Class 35 Solid State Drive
+                            AMD Radeon Graphics with shared graphics memory
+                            802.11ac 2x2 WiFi + Bluetooth 4.1
+                           
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -434,19 +451,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
+                            <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 5000 2-in-1 14"  HD</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">22</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">189</h1>
+                            <h1 class="shop-item-price">679</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            Brilliant 9.7-inch diagonal LED backlit multitouch display
-                            Seamless multitasking with HP webOS 3.0 and essential productivity apps
-                            Exclusive Beats Audio for studio-quality sound
-                            Blazing fast Qualcomm Snapdragon dual-CPU APQ8060 1.2GHz processor.</p>
+                        <p>【15.6" diagonal HD Display】1366 x 768 resolution boasts impressive color and clarity, Anti-Glare Energy-efficient LED screen.
+                            【4GB DDR4 RAM】Plenty of high-bandwidth RAM to smoothly run your games as well as multiple programs. 【 128GB PCIe SSD】Save files fast and store more data. 
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -458,22 +474,17 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Newest Dell Inspiron 3000 Premium</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">23</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">560</h1>
+                        <h1 class="shop-item-price">758</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/LaptopDell03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	1PH94UT#ABA
-                        Brand	HP
-                        Screen Size	12.3 Inches
-                        Operating System	Win 10 pro
-                        Memory Storage Capacity	8 GB
-                        About this item
-                        HP SmartBuy 1012 i5-7300U 12.3 8GB/256 PC Core i5-7300U, 12.3 WQXGA BV LED UWVA, UMA, Webcam, 8GB DDR3 RAM, 256GB SSD, BT, 4C Battery, Win 10 PRO 64, 3yr Warranty U.S
-                        - English localization</p>
+                    <p>【Dell Inspiron Laptop】16GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once; 1TB PCIe Solid State Drive allows to fast bootup and data transfer
+                        【11th Generation Processor】11th Generation Intel Core i5-1135G7 Quad-Core Processor (4 Cores, 8MB Cache, 8 Threads, Base Frequency at 2.4 GHz, up to 4.2 GHz at Maximum Turbo Speed)</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -486,18 +497,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 3593 15.6"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">24</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">364</h1>
+                        <h1 class="shop-item-price">749</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="../Laptop/imagesLaptop/laptopDell04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        Windows 8 Pro 32
-                        Intel Atom Z2760 (1.5 GHz, up to 1.8 GHz using Intel Burst Technology and Intel Hyper-Threading Technology, 1 MB cache, 2 cores)
-                        10.1 diagonal WXGA wide-viewing angle (1280 x 800); Ultra- Wide-viewing angle.</p>
+                    <p>Full-size non-backlit Keyboard with numeric keypad. 802.11 Dual Band Wireless-AC WLAN, Stereo Speakers, Built-in HD Webcam, 10/100/1000GB Ethernet LAN;USB 3.2 Gen 1 Type A (x2), USB 2.0 Type A (x1), HDMI (x1) - SD Media Card Reader (SD, SDHC, SDXC) - 10/100/1000 Mbps- 1 combo headphone / microphone jack</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -565,7 +574,7 @@
                                 <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
+                                <a class="text-decoration-none text-secondary" href="../../registration/registration.php">Create account</a>
                             </li>';
                         };
                     ?>
@@ -588,10 +597,10 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.php">Returns Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../contact.php">Contact</a></li>
                 </ul>
             </div>
 

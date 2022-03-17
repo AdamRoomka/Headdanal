@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * header */ * {
 	padding: 0;
 	margin: 0;
@@ -163,42 +165,7 @@ a.cart .cart-basket {
 	right: 3%;
 	top: 10%;
 	color: green;
-}
-
-.p-image img {
-	width: 70%;
-
-	transform: rotate(15deg);
-	transition: all 0.5s;
-}
-
-.p-about {
-	position: absolute;
-	width: 80%;
-	font-size: 12px;
-	font-weight: 650;
-	top: 40%;
-	left: -36%;
-	opacity: 0;
-}
-
-.card:hover .p-about {
-	animation: content 300ms ease-in forwards;
-}
-
-@keyframes content {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-		left: 7%;
-	}
-}
-
-.card:hover .p-image img {
-	animation: onimage 300ms ease-in forwards;
+	animation: pricereverse 500ms linear;
 }
 
 .card:hover .p-price {
@@ -208,18 +175,35 @@ a.cart .cart-basket {
 @keyframes onprice {
 	0% {
 		right: 3%;
-		top: 6%;
-	}
-
-	50% {
-		right: 18%;
-		top: 9%;
+		top: 10%;
 	}
 
 	100% {
 		right: 60%;
 		top: 20%;
 	}
+}
+
+@keyframes pricereverse {
+	0% {
+		right: 60%;
+		top: 20%;
+	}
+	
+	100% {
+		right: 3%;
+		top: 10%;
+	}
+}
+
+.p-image img {
+	width: 70%;
+	transform: rotate(15deg);
+	animation: imagereverse 300ms linear;
+}
+
+.card:hover .p-image img {
+	animation: onimage 300ms ease-in forwards;
 }
 
 @keyframes onimage {
@@ -241,14 +225,73 @@ a.cart .cart-basket {
 		transform: translateX(31%);
 		opacity: 0.4;
 	}
+} 
+
+@keyframes imagereverse {
+	0% {
+		width: 60%;
+		top: 30%;
+		transform: translateY(28%);
+		transform: translateX(31%);
+		opacity: 0.4;
+	}
+
+	50% {
+		width: 60%;
+		transform: translateY(-10%);
+		transform: translateX(30%);
+		opacity: 0.4;
+	}
+
+	100% {
+		width: 70%;
+	}
+}
+
+.p-about {
+	position: absolute;
+	width: 80%;
+	font-size: 12px;
+	font-weight: 650;
+	top: 40%;
+	left: -36%;
+	opacity: 0;
+	animation: aboutreverse 300ms linear;
+}
+
+.card:hover .p-about {
+	animation: content 300ms ease-in forwards;
+}
+
+@keyframes content {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		left: 7%;
+	}
+}
+
+@keyframes aboutreverse {
+	0% {
+		opacity: 1;
+		left: 7%;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
 .buttons {
 	position: absolute;
 	bottom: -43%;
+	animation:  buttonreverse 500ms linear;
 }
 
-.card:hover .buttons {
+ .card:hover .buttons {
 	animation: buttons 500ms ease-in forwards;
 }
 
@@ -262,11 +305,24 @@ a.cart .cart-basket {
 	}
 }
 
-#btn {
+@keyframes buttonreverse {
+	from {
+		bottom: 6%;
+	}
+	to {
+		bottom: -28%;
+	}
+}
+
+.btn {
 	height: 14%;
 	font-size: 16px;
 	width: 40%;
 	font-weight: 600;
+}
+#cartModal div.cart-items .cart-column > button{
+	width: 25%;
+	height: 60%;
 }
 /* product cart end */
 
@@ -282,4 +338,47 @@ a.cart .cart-basket {
 }
 .about-us {
 	text-align: justify;
+}
+
+/* modal-registration */
+
+.hide {
+	display: none;
+}
+
+.transparent {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.575);
+	z-index: 1;
+}
+.close {
+	position: absolute;
+	top: 5px;
+	right: 23px;
+	text-decoration: none;
+}
+.registration {
+	width: 480px;
+	max-height: 70%;
+	min-height: 420px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: rgba(255, 255, 255, 0.85);
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+#templatemo_nav_top > div > div:nth-child(2) > div > a{
+	font-family: 'Poppins', sans-serif;
+	width: auto;
+	font-weight: 100;
+	border: 1px solid transparent;
+}
+#tempaltemo_footer > div > div.row > div:nth-child(3) > ul > li .text-secondary{
+	width: auto;
+	font-weight: 400;
 }

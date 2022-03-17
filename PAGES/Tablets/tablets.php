@@ -12,10 +12,9 @@
     
     <link rel="icon" href="../../main-images/green.png">
     <link rel="stylesheet" href="../pages.css">
-    <link rel="stylesheet" href="../../main.css">
     <script src="../../main.js" ></script>
     
-    <title>Apple</title>
+    <title>Tablet</title>
 </head>
 <body>
     <div id="transparent"></div>
@@ -126,7 +125,7 @@
                     </div>
                     <div class="row d-flex justify-content-around m-4">
                         <div class="col-6 mt-1">
-                            <a href="../registration/registration.php">Create your account</a>
+                            <a href="../../registration/registration.php">Create your account</a>
                         </div>
                         <div class="col-6 d-flex justify-content-end h-25">
                             <button type="submit" class="btn btn-success" name="login_user">Login</button>
@@ -200,6 +199,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Apple 11" iPad Pro M1</h5> <span>iPad Pro</span>
+                            <div class="shop-item-id" style="display: none;">33</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">799</h1>
@@ -220,6 +220,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Apple 10.2" iPad</h5> <span>iPad</span>
+                            <div class="shop-item-id" style="display: none;">34</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">489</h1>
@@ -244,6 +245,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Apple 8.3" iPad mini</h5> <span>iPad</span>
+                        <div class="shop-item-id" style="display: none;">35</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">499</h1>
@@ -265,6 +267,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Apple 12.9" iPad Pro M1</h5> <span>iPad Pro</span>
+                        <div class="shop-item-id" style="display: none;">36</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">999</h1>
@@ -285,7 +288,6 @@
 
 <!-- cartDELL -->
 <h2 class="container text-center p-5 brand text-success">DELL</h2>
-
 <div class="container bg beige pt-5 pb-5">
     <div class="row  gy-5">
         
@@ -295,6 +297,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7210 Tablet</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">37</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1400</h1>
@@ -324,6 +327,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7212 Rugged</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">38</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">1200</h1>
@@ -347,6 +351,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7200</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">39</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">399</h1>
@@ -378,6 +383,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7000 7320</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">40</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">328</h1>
@@ -411,6 +417,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">41</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">399</h1>
@@ -435,6 +442,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">42</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">189</h1>
@@ -459,6 +467,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">43</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">560</h1>
@@ -487,6 +496,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">44</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">364</h1>
@@ -520,6 +530,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo 7" Tab M7 32GB</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">45</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">89</h1>
@@ -548,6 +559,7 @@
                         <div class="p-info px-3 py-3">
                         <div>
                             <h5 class="shop-item-title text-success mb-0 ">Lenovo 10.3" Smart Tab M10</h5> <span>Tablet</span>
+                            <div class="shop-item-id" style="display: none;">46</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                             <h1 class="shop-item-price">269</h1>
@@ -571,6 +583,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo 8" Tab M8 HD </h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">47</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">299</h1>
@@ -595,6 +608,7 @@
                     <div class="p-info px-3 py-3">
                     <div>
                         <h5 class="shop-item-title text-success mb-0 ">Lenovo Tab M10 Plus</h5> <span>Tablet</span>
+                        <div class="shop-item-id" style="display: none;">48</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
                         <h1 class="shop-item-price">179</h1>
@@ -668,7 +682,7 @@
                                 <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
+                                <a class="text-decoration-none text-secondary" href="../../registration/registration.php">Create account</a>
                             </li>';
                         };
                     ?>
@@ -691,10 +705,10 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="#">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.php">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.php">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.php">Returns Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../contact.php">Contact</a></li>
                 </ul>
             </div>
 
