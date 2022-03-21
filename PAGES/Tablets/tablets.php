@@ -80,34 +80,33 @@
     </div>
     <!-- close Modal search -->
 
-    <!-- modal cart -->
-    <div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            
-        <div class="modal-content">
-            <div class="modal-header border-bottom-0">
-            
-                <section class="container content-section">
-                    <h2 class="section-header">CART</h2>
-                    <div class="cart-row">
-                        <span class="cart-item cart-header cart-column">ITEM</span>
-                        <span class="cart-price cart-header cart-column">PRICE</span>
-                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                    </div>
-                    <div class="cart-items">
-                    </div>
-                    <div class="cart-total">
-                        <strong class="cart-total-title">Total</strong>
-                        <span class="cart-total-price">$0</span>
-                    </div>
-                    <button class="btn btn-success btn-purchase" id="btn" type="button">PURCHASE</button>
-                </section>
-            
-            </div>
-        </div>
-        </div>
+   <!-- modal shopping cart -->
+<div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header border-bottom-0">        
+              <section class="container content-section">
+                 <h2 class="section-header mb-4 text-success">easy.TECH</h2>
+                 <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                 </div>
+                 <div class="cart-items">
+                 </div>
+                 <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                     <span class="cart-total-price">$0</span>
+                 </div>
+                 <div class="modal-body">
+                 <a class="btn btn-success btn-purchase" href="../checkout.php" role="button">PURCHASE</a>
+                  </div>
+               </section>              
+          </div>
+       </div>
     </div>
-    <!-- close modal cart -->
+</div>
+<!-- clouse modal shopping cart   -->
 
     <div class="hide" id="hide">
         <div class="registration">

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../PAGES/pages.css">
     <script src="../main.js"></script>
     
@@ -80,35 +81,33 @@
     </div>
     <!-- close Modal search -->
     
-    <!-- modal shopping cart -->
+   <!-- modal shopping cart -->
 <div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-        
       <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <h5 class="modal-title" id="cartModal">
-            <section class="container content-section">
-                <h2 class="section-header">CART</h2>
-                <div class="cart-row">
+          <div class="modal-header border-bottom-0">        
+              <section class="container content-section">
+                 <h2 class="section-header mb-4 text-success">easy.TECH</h2>
+                 <div class="cart-row">
                     <span class="cart-item cart-header cart-column">ITEM</span>
                     <span class="cart-price cart-header cart-column">PRICE</span>
                     <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                </div>
-                <div class="cart-items">
-                </div>
-                <div class="cart-total">
+                 </div>
+                 <div class="cart-items">
+                 </div>
+                 <div class="cart-total">
                     <strong class="cart-total-title">Total</strong>
-                    <span class="cart-total-price">$0</span>
-                </div>
-                <button class="btn btn-primary btn-purchase" id="btn" type="button">PURCHASE</button>
-            </section>
-          </h5>
-        </div>
-      </div>
+                     <span class="cart-total-price">$0</span>
+                 </div>
+                 <div class="modal-body">
+                 <a class="btn btn-success btn-purchase" href="../PAGES/checkout.php" role="button">PURCHASE</a>
+                  </div>
+               </section>              
+          </div>
+       </div>
     </div>
 </div>
-<!-- clouse modal shopping cart -->
-
+<!-- clouse modal shopping cart   -->
     <div class="hide" id="hide">
         <div class="registration">
             <!-- Login -->
@@ -140,7 +139,7 @@
 <!-- CLOSE TOP NAV -->
 
     <!-- HEADER-BOTTOM -->
-    <nav class="navbar sticky-lg-top  navbar-expand-lg navbar-light ">
+    <nav class="navbar  navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand text-success" href="../index.php">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

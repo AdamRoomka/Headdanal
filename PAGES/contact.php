@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     
+    <link rel="stylesheet" href="../PAGES/pages.css">
     <link rel="stylesheet" href="../main.css">
-    <title>Contact</title>
+    <script src="../main.js"></script>
+    
+    <title>About us</title>
     <link rel="icon" href="../main-images/green.png">
 </head>
 <body>
-    <div id="transparent" scroll="no"></div>
+<div id="transparent"></div>
 <!-- TOP NAV -->
-<nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
+    <nav class="navbar bg beige navbar-light" id="templatemo_nav_top">
         <div class="container">
             <div class="d-flex flex-row">
                 <a class="text-light text-decoration-none " href="mailto:info@company.com"><i class="fa fa-envelope"></i> @easy.TECH.com</a>
@@ -53,14 +56,14 @@
                         echo '
                         <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
                         echo '
-                        <a class="btn nav-icon position-relative text-decoration-none" href="../registration/registration.php">Create account!</a>';
+                        <a class="btn nav-icon position-relative" href="../registration/registration.php">Create account!</a>';
                     };
                     ?>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Modal -->
+    <!-- Modal search-->
     <div class="modal fade bg-transperant" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
@@ -76,21 +79,44 @@
             </form>
         </div>
     </div>
-            </div>
-        </div>
-    </nav>
-    <!-- close Modal -->
-    <!-- CLOSE TOP NAV -->
+    <!-- close Modal search -->
 
-    <!-- Registration -->
-    <div class="hide" id="hide">
+<!-- modal shopping cart -->
+<div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header border-bottom-0">        
+              <section class="container content-section">
+                 <h2 class="section-header mb-4 text-success">easy.TECH</h2>
+                 <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                 </div>
+                 <div class="cart-items">
+                 </div>
+                 <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                     <span class="cart-total-price">$0</span>
+                 </div>
+                 <div class="modal-body">
+                 <a class="btn btn-success btn-purchase" href="../PAGES/checkout.php" role="button">PURCHASE</a>
+                  </div>
+               </section>              
+          </div>
+       </div>
+    </div>
+</div>
+<!-- clouse modal shopping cart   -->
+
+<div class="hide" id="hide">
         <div class="registration">
             <!-- Login -->
             <div class="h-100 me-2" id="login">
                 <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
                 <?php include('../php/errorslogin.php'); ?>
-                <form method="post" action="contact.php">
+                <form method="post" action="about.php">
                     <div class="form-outline mb-5 d-flex justify-content-center">
                         <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
@@ -111,8 +137,11 @@
     </div>
     <!-- Close Registration -->
 
+<!-- CLOSE TOP NAV -->
+
+
     <!-- HEADER-BOTTOM -->
-    <nav class="navbar sticky-lg-top  navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
           <a class="navbar-brand text-success" href="../index.php">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,7 +153,7 @@
                 <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../ABOUT-US/about.php">About us</a>
+                <a class="nav-link" href="#">About us</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -132,9 +161,9 @@
                   Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./Tablets/tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="./Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="./Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Tablets/tablets.php">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Desktops/desktop.php">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Laptop/laptop.php">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -143,16 +172,21 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="./Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="./Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="./Lenovo/lenovo.php">LENOVO</a></li>
-                </ul>
-            </ul>  
+                  <li><a class="dropdown-item" href="../Pages/Apple/apple.php">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Dell/dell.php">DELL</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Hp/hp.php">HP</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Lenovo/lenovo.php">LENOVO</a></li>
+               </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
+    </nav>
+          
 <!-- CLOUSE HEADER-BOTTOM  -->
+
+
+
 
 <!-- CONTACT START -->
 
