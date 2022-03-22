@@ -305,7 +305,7 @@ th {
 
 /* Shoping cart start */
 .modal-content {
-	background-color: rgb(255, 255, 255, 0.7);
+	background-color: rgb(255, 255, 255, 0.85);
 }
 
 .cart-header {
@@ -402,7 +402,6 @@ th {
 .cart-total-price {
 	color: #333;
 	font-size: 1.1em;
-	
 }
 
 .btn-purchase {
@@ -411,18 +410,17 @@ th {
 	font-size: 1.75em;
 }
 
-div.modal-body > a{
+div.modal-body > a {
 	height: 14%;
 	font-size: 16px;
 	width: 40%;
 	font-weight: 600;
-	
 }
 /* Shoping cart end */
 
 /* CHECKOUT START */
 
-.continue_to_checkout{
+.continue_to_checkout {
 	height: auto;
 }
 
