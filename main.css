@@ -275,7 +275,7 @@ th {
 .contact {
 	/* background-color: rgba(255, 255, 255, 0.5); */
 	width: 60%;
-	height: 80%;
+	min-height: 80%;
 	padding: 10px;
 	display: flex;
 	align-items: center;
@@ -412,6 +412,10 @@ th {
 /* Shoping cart end */
 
 /* CHECKOUT START */
+
+.continue_to_checkout{
+	height: auto;
+}
 
 .col-25 {
 	-ms-flex: 25%; /* IE10 */

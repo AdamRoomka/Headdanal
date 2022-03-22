@@ -6,6 +6,8 @@ window.onload = function(e) {
 		ready();
 	}
 
+	
+
 	function ready() {
 		var removeCartItemButtons = document.getElementsByClassName('btn-danger');
 		for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -24,19 +26,7 @@ window.onload = function(e) {
 			var button = addToCartButtons[i];
 			button.addEventListener('click', addToCartClicked);
 		}
-
-		document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
-	}
-
-	function purchaseClicked() {
-		var cartItems = document.getElementsByClassName('cart-items')[0];
-		while (cartItems.hasChildNodes()) {
-			cartItems.removeChild(cartItems.firstChild);
-		}
-		let productNumbers = localStorage.getItem('cartNumbers');
-		localStorage.setItem('cartNumbers', (productNumbers = 0));
-		localStorage.removeItem('cart');
-		updateCartTotal();
+		
 	}
 
 	function removeCartItem(event, id) {
@@ -74,15 +64,16 @@ window.onload = function(e) {
 	}
 
 	function addToCartClicked(event) {
-		var button = event.target;
-		var shopItem = button.parentElement.parentElement;
-		var id = shopItem.getElementsByClassName('shop-item-id')[0].innerText;
-		var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
-		var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
-		var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-		addItemToCart(title, price, imageSrc, id);
-		addItemToLocalStorage(title, price, imageSrc, id);
-		updateCartTotal();
+			var button = event.target;
+			var shopItem = button.parentElement.parentElement;
+			var id = shopItem.getElementsByClassName('shop-item-id')[0].innerText;
+			var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+			var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+			var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+			addItemToCart(title, price, imageSrc, id);
+			addItemToLocalStorage(title, price, imageSrc, id);
+			updateCartTotal();
+		
 	}
 
 	function addItemToLocalStorage(title, price, imageSrc, id) {
@@ -114,9 +105,13 @@ window.onload = function(e) {
 	}
 
 	function addItemToCart(title, price, imageSrc, id) {
+
+		
+
 		var cartRow = document.createElement('div');
 		cartRow.classList.add('cart-row');
 		var cartItems = document.getElementsByClassName('cart-items')[0];
+		var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
 		var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
