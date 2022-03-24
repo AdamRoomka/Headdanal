@@ -1,4 +1,3 @@
-<?php include('../php/server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
     
     <link rel="stylesheet" href="../PAGES/pages.css">
     <link rel="stylesheet" href="../main.css">
-    <script src="../main.js"></script>
+    <!-- <script src="../main.js"></script> -->
     
     <title>About us</title>
     <link rel="icon" href="../main-images/green.png">
@@ -38,27 +37,8 @@
                     </span>
                 </a>
                 <div class="d-flex">
-                    <?php  
-                    
-                    if (isset($_SESSION['username'])){
-                            ?>
-                        <p class="mx-2 mb-0">
-                            <strong>
-                                <?php echo $_SESSION["username"]; ?>
-                            </strong>
-                        </p>
-                        <?php
-                        echo '
-                        <p class="ms-2 mb-0">
-                            <a href="../php/logout.php" style="color: green;">logout</a>
-                        </p>';
-                    }else{
-                        echo '
-                        <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
-                        echo '
-                        <a class="btn nav-icon position-relative" href="../registration/registration.php">Create account!</a>';
-                    };
-                    ?>
+                    <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>
+                    <a class="btn nav-icon position-relative" href="../registration/registration.html">Create account!</a>
                 </div>
             </div>
         </div>
@@ -100,7 +80,7 @@
                      <span class="cart-total-price">$0</span>
                  </div>
                  <div class="modal-body">
-                 <a class="btn btn-success btn-purchase" href="../PAGES/checkout.php" role="button">PURCHASE</a>
+                 <a class="btn btn-success btn-purchase" href="#" role="button">PURCHASE</a>
                   </div>
                </section>              
           </div>
@@ -115,8 +95,7 @@
             <div class="h-100 me-2" id="login">
                 <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
-                <?php include('../php/errorslogin.php'); ?>
-                <form method="post" action="about.php">
+                <form method="post">
                     <div class="form-outline mb-5 d-flex justify-content-center">
                         <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
@@ -125,7 +104,7 @@
                     </div>
                     <div class="row d-flex justify-content-around m-4">
                         <div class="col-6 mt-1">
-                            <a href="../registration/registration.php">Create your account</a>
+                            <a href="../registration/registration.html">Create your account</a>
                         </div>
                         <div class="col-6 d-flex justify-content-end h-25">
                             <button type="submit" class="btn btn-success" name="login_user">Login</button>
@@ -143,14 +122,14 @@
     <!-- HEADER-BOTTOM -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand text-success" href="../index.php">easy.TECH</a>
+          <a class="navbar-brand text-success" href="../index.html">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About us</a>
@@ -161,9 +140,9 @@
                   Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Tablets/tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Tablets/tablets.html">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Desktops/desktop.html">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Laptop/laptop.html">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -172,10 +151,10 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Pages/Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="../Pages/Lenovo/lenovo.php">LENOVO</a></li>
+                  <li><a class="dropdown-item" href="../PAGES/Apple/apple.html">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Dell/dell.html">DELL</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Hp/hp.html">HP</a></li>
+                  <li><a class="dropdown-item" href="../Pages/Lenovo/lenovo.html">LENOVO</a></li>
                </ul>
               </li>
             </ul>
@@ -187,34 +166,80 @@
 
 
 
-<div class="container about-us mb-5">
-    <div class="row mt-5 mb-5">
-           <div class="col-lg-6 col-md-6 col-sm-12">
-               <img class="img-fluid" src="./about-us.jpg" alt="" srcset="">
-           </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 ">
-            <h3 class="mb-4">ABOUT US</h3>
-            <p><i>easy.TECH</i> was founded in 2007. Our plan was simple: let's make it easy for people to buy PC online, affordably with delivery to their door.</p>   
-            <p>Now <i>easy.TECH </i>is one of the fastest growing IT retailer we are committed to provide the best customer service and competitive price in the market. We supply a wide range of notebook, desktop and tablets from major vendor. We are the premier notebook reseller for leading brands such as Apple, Dell, HP, Lenovo. </p>  
-            <p> Our products and sales team reflect reliability, competitive prices and supportive customer service.</p>
 
-            <h4 class="mt-4">Family Affair</h4>
-            <p>Even though we command a global reach, easy.TECH still retains the feel of a small, neighborhood mom & pop shop. We are a proud, family owned business built on the pillars of honesty and treating people right.</p> 
 
-            <h4 class="mt-4">Shipping</h4>
-            <p>We ship around the globe. We ship most international packages via DHL. Free Expedited Shipping for most orders over €200.</p>
-        
-        
-            <h4 class="mt-4">Returns</h4>
-            <p>If you are dissatisfied with your purchase for any reason, you may return it to <i>easy.TECH</i> within 30 days of the delivery date.</p>
+<!-- CHECKOUT -- -->
+  <div class="col-85">
+    <div class="contact-bg">
+        <div class="contact">
+            <div class="container">
+                <div class="row contact-card-bg mt-5">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input class="input-checkout" type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input class="input-checkout" type="text" id="email" name="email" placeholder="john@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input class="input-checkout" type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input class="input-checkout" type="text" id="city" name="city" placeholder="New York">
+
+                        <div class="row">
+                        <div class="col-50">
+                            <label for="state">State</label>
+                            <input class="input-checkout" type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input class="input-checkout" type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input class="input-checkout" type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input class="input-checkout" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input class="input-checkout" type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input class="input-checkout" type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input class="input-checkout" type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-12">
+                            <input class="input-checkout" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <div>
+                            <a onclick="endPurchase()"  class=" col-12 btn btn-checkout btn-success mt-3 mb-3 continue_to_checkout" href="../index.html" > Complete to checkout </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
+<!-- CHECKOUT END -->
 
-
-<!-- FOOTER -->
-<footer class="bg beige" id="tempaltemo_footer">
+ <!-- FOOTER -->
+ <footer class="bg beige" id="tempaltemo_footer">
     <div class="container">
         <div class="row">
 
@@ -242,9 +267,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Products</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Tablets/tablets.php">Tablets</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Laptop/laptop.php">Laptops</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../PAGES/Desktops/desktop.php">Desktops</a></li>  
+                    <li><a class="text-decoration-none text-secondary" href="./Tablets/tablets.html">Tablets</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./Laptop/laptop.html">Laptops</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="./Desktops/desktop.html">Desktops</a></li>  
                 </ul>
             </div>
 
@@ -252,25 +277,12 @@
                 <h4 class="h4 text-light border-bottom pb-3 border-light">My account</h4>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none text-secondary" href="#"></a></li>
-                    <?php  
-                        if (isset($_SESSION['username'])){
-                            echo '
-                            <li>
-                                <a class="text-decoration-none text-secondary btn disabled" href="#">Sign in</a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none text-secondary btn disabled" href="#">Create account</a>
-                            </li>';
-                        }else{
-                            echo '
-                            <li>
-                                <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none text-secondary sto" href="./registration/registration.php">Create account</a>
-                            </li>';
-                        };
-                    ?>
+                    <li>
+                        <a onclick="registration()" class="text-decoration-none text-secondary" href="#">Sign in</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none text-secondary" href="../registration/registration.html">Create account</a>
+                    </li>
                     <h4 class="mt-5 connect">Stay connected</h4>
                     <li class="list-inline-item text-center ">
                         <a class="text-light text-decoration-none " target="_blank" href="http://facebook.com/"><i class="fa fa-facebook-square " aria-hidden="true"></i></a>
@@ -290,10 +302,10 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="../POLICIES/Terms.php">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Privacy.php">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Returns.php">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../PAGES/contact.php">Contact</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../POLICIES/Terms.html">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Privacy.html">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../POLICIES/Returns.html">Returns Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -316,7 +328,20 @@
 <!-- END FOOTER -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         function closing(){
             document.querySelector("#transparent").classList.remove("transparent");
@@ -328,6 +353,21 @@
             document.querySelector("body").style.overflow = "hidden";
             document.querySelector("#hide").classList.remove("hide");
         }
+
+        function endPurchase(){
+
+		alert("Thank you for purchase!");
+        var cartItems = document.getElementsByClassName('cart-items')[0];
+		while (cartItems.hasChildNodes()) {
+			cartItems.removeChild(cartItems.firstChild);
+		}
+		let productNumbers = localStorage.getItem('cartNumbers');
+		localStorage.setItem('cartNumbers', (productNumbers = 0));
+		localStorage.removeItem('cart');
+
+		updateCartTotal();
+	    }
+
     </script>
 </body>
 </html>

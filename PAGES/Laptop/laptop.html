@@ -1,4 +1,3 @@
-<?php include('../../php/server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
     <link rel="stylesheet" href="../pages.css">
     <script src="../../main.js" ></script>
     
-    <title>Tablet</title>
+    <title>Laptop</title>
 </head>
 <body>
     <div id="transparent"></div>
@@ -37,27 +36,8 @@
                     </span>
                 </a>
                 <div class="d-flex">
-                    <?php  
-                    
-                    if (isset($_SESSION['username'])){
-                            ?>
-                        <p class="mx-2 mb-0">
-                            <strong>
-                                <?php echo $_SESSION["username"]; ?>
-                            </strong>
-                        </p>
-                        <?php
-                        echo '
-                        <p class="ms-2 mb-0">
-                            <a href="../../php/logout.php" style="color: green;">logout</a>
-                        </p>';
-                    }else{
-                        echo '
-                        <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>';
-                        echo '
-                        <a class="btn nav-icon position-relative" href="../../registration/registration.php">Create account!</a>';
-                    };
-                    ?>
+                    <a onclick="registration()" class="btn nav-icon position-relative text-decoration-none ms-2" href="#">Sign in</a>
+                    <a class="btn nav-icon position-relative" href="../../registration/registration.html">Create account!</a>
                 </div>
             </div>
         </div>
@@ -80,7 +60,7 @@
     </div>
     <!-- close Modal search -->
 
-   <!-- modal shopping cart -->
+<!-- modal shopping cart -->
 <div class="modal fade bg-transperant" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -99,7 +79,7 @@
                      <span class="cart-total-price">$0</span>
                  </div>
                  <div class="modal-body">
-                 <a class="btn btn-success btn-purchase" href="../checkout.php" role="button">PURCHASE</a>
+                 <a class="btn btn-success btn-purchase" href="../checkout.html" role="button">PURCHASE</a>
                   </div>
                </section>              
           </div>
@@ -108,14 +88,13 @@
 </div>
 <!-- clouse modal shopping cart   -->
 
-    <div class="hide" id="hide">
+<div class="hide" id="hide">
         <div class="registration">
             <!-- Login -->
             <div class="h-100 me-2" id="login">
                 <h5 class="text-center my-5 col-12">Login</h5>
                 <a href="#" onclick="closing()" class="close fs-1 text-secondary" aria-hidden="true">&times;</a>
-                <?php include('../../php/errorslogin.php'); ?>
-                <form method="post" action="tablets.php">
+                <form method="post">
                     <div class="form-outline mb-5 d-flex justify-content-center">
                         <input type="email" id="email" name="email" class="form-control w-75" placeholder="Your Email" />
                     </div>
@@ -124,7 +103,7 @@
                     </div>
                     <div class="row d-flex justify-content-around m-4">
                         <div class="col-6 mt-1">
-                            <a href="../../registration/registration.php">Create your account</a>
+                            <a href="../../registration/registration.html">Create your account</a>
                         </div>
                         <div class="col-6 d-flex justify-content-end h-25">
                             <button type="submit" class="btn btn-success" name="login_user">Login</button>
@@ -142,17 +121,17 @@
     <!-- HEADER-BOTTOM -->
     <nav class="navbar  navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand text-success" href="../../index.php">easy.TECH</a>
+          <a class="navbar-brand text-success" href="../../index.html">easy.TECH</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../index.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../ABOUT-US/about.php">About us</a>
+                <a class="nav-link" href="../../ABOUT-US/about.html">About us</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -160,9 +139,9 @@
                   Category
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./tablets.php">TABLET</a></li>
-                  <li><a class="dropdown-item" href="../Desktops/desktop.php">DESKTOP</a></li>
-                  <li><a class="dropdown-item" href="../Laptop/laptop.php">LAPTOP</a></li>
+                  <li><a class="dropdown-item" href="../Tablets/tablets.html">TABLET</a></li>
+                  <li><a class="dropdown-item" href="../Desktops/desktop.html">DESKTOP</a></li>
+                  <li><a class="dropdown-item" href="../Laptop/laptop.html">LAPTOP</a></li>
                 </ul>
 
               </li>
@@ -171,10 +150,10 @@
                   Brands
                 </a>
                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../Apple/apple.php">APPLE</a></li>
-                  <li><a class="dropdown-item" href="../Dell/dell.php">DELL</a></li>
-                  <li><a class="dropdown-item" href="../Hp/hp.php">HP</a></li>
-                  <li><a class="dropdown-item" href="../Lenovo/lenovo.php">LENOVO</a></li>
+                  <li><a class="dropdown-item" href="../Apple/apple.html">APPLE</a></li>
+                  <li><a class="dropdown-item" href="../Dell/dell.html">DELL</a></li>
+                  <li><a class="dropdown-item" href="../Hp/hp.html">HP</a></li>
+                  <li><a class="dropdown-item" href="../Lenovo/lenovo.html">LENOVO</a></li>
                </ul>
               </li>
             </ul>
@@ -191,22 +170,24 @@
 
 <div class="container bg beige pt-5 pb-5">
     <div class="row  gy-5">
-        
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                 <div class="container d-flex justify-content-center">
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 11" iPad Pro M1</h5> <span>iPad Pro</span>
-                            <div class="shop-item-id" style="display: none;">33</div>
+                            <h5 class="shop-item-title text-success mb-0 ">2020 Apple MacBook Air</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">17</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">799</h1>
+                            <h1 class="shop-item-price">1130</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="./imagesTablet/appleTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image img-fluid" src="./imagesLaptop/laptopApple01.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Experience the next level of ultimate with the space gray Apple 11" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
+                        <p>All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.
+                            Powerful Performance – Take on everything from professional-quality editing to action-packed gaming with ease. The Apple M1 chip with an 8-core CPU delivers up to 3.5x faster performance than the previous generation while using way less power.
+                            
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -218,20 +199,19 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Apple 10.2" iPad</h5> <span>iPad</span>
-                            <div class="shop-item-id" style="display: none;">34</div>
+                            <h5 class="shop-item-title text-success mb-0 ">Apple MacBook Pro MD101LL/A</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">18</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">489</h1>
+                            <h1 class="shop-item-price">325</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopApple02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>The Apple 10.2" iPad features the Retina display with a 2160 x 1620 resolution for crisp details and vivid colors, making it an ideal companion for watching movies, creating content, and much more. Key Features
-                            10.2" Multi-Touch Retina Display
-                            2160 x 1620 Screen Resolution (264 ppi)
-                            Apple A13 Bionic Chip
-                            256GB Storage Capacity.</p>
+                        <p>This pre-owned product is not Apple certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers. 13.3 inch LED - backlit display, 1280-by-800 resolution
+                            2.5 GHz Dual-Core Intel Core i5 processor
+                            Intel HD Graphics 4000
+                            4GB DDR3 RAM, 128GB HDD</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -243,16 +223,21 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 8.3" iPad mini</h5> <span>iPad</span>
-                        <div class="shop-item-id" style="display: none;">35</div>
+                        <h5 class="shop-item-title text-success mb-0 ">Apple MacBook Pro MF839LL/A</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">19</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">499</h1>
+                        <h1 class="shop-item-price">3400</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopApple03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Mega power now comes in a mini size with the purple Apple 8.3" iPad mini, which lets you bring ideas to life in the palm of your hand. Supercharged by Apple's A15 Bionic chip with a 6-Core CPU, 5-Core GPU, a Neural Engine, an IPS display, Wi-Fi 6 (802.11ax), a 12MP Ultra-Wide camera with Center Stage, 5 Gb/s USB Type-C connectivity, and all-day battery life.</p>
+                    <p>13.3" 2.7GHz Intel Core i5 Processor
+                        8GB RAM, 128GB Solid State Drive
+                        Intel Iris Graphics 6100 Graphics Processor
+                        Connectivity includes 802.11ac Wi-Fi, Bluetooth 4.0, two USB 3.0 ports, two "Thunderbolt 2" ports, an HDMI port, an audio in/out port, and an SDXC card slot.
+                        Fresh installation of macOS 10.14 Mojave, includes new MagSafeadapter
+                       </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -265,16 +250,21 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Apple 12.9" iPad Pro M1</h5> <span>iPad Pro</span>
-                        <div class="shop-item-id" style="display: none;">36</div>
+                        <h5 class="shop-item-title text-success mb-0 ">Apple 13in MacBook Pro</h5> <span>Laptop </span>
+                        <div class="shop-item-id" style="display: none;">20</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">999</h1>
+                        <h1 class="shop-item-price">500</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/appleTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopApple04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Experience the next level of ultimate with the space gray Apple 12.9" iPad Pro, which features performance that is supercharged by Apple's M1 8-Core chip with an 8-Core GPU and a 16-Core Neural Engine, a Liquid Retina XDR display, Wi-Fi 6 (802.11ax), a 12MP Ultra Wide camera with Center Stage, and 40 Gb/s Thunderbolt connectivity.</p>
+                    <p>2.3GHz dual-core Intel Core i5 processor with Turbo Boost up to 3.6GHz
+                        8GB 2133MHz LPDDR3 Memory, 128GB Solid State Drive
+                        Intel Iris Plus Graphics 640
+                        Connectivity includes 802.11ac Wi-Fi, Bluetooth 4.2, two "Thunderbolt 3" ports (USB-C connector), and a 3.5 mm headphone jack.
+                        Fresh installation of macOS 10.14 Mojave, includes new MagSafe adapter.
+                        </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -287,6 +277,7 @@
 
 <!-- cartDELL -->
 <h2 class="container text-center p-5 brand text-success">DELL</h2>
+
 <div class="container bg beige pt-5 pb-5">
     <div class="row  gy-5">
         
@@ -295,24 +286,22 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7210 Tablet</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">37</div>
+                            <h5 class="shop-item-title text-success mb-0 ">Dell Inspiron 15 5515</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">21</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">1400</h1>
+                            <h1 class="shop-item-price">907</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopDell01.webp"> </div>
+                    <div class="p-about shop-item-details">"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Series	9PT1X
-                            Brand	Dell
-                            Generation	10th Generation
-                            Screen Size	12.3 Inches
-                            Operating System	Windows 10 Professional. About this item
-                            16GB LPDDR3
-                            Intel Core i7 (10th Gen) i7-10610U Quad-core (4 Core) 1.8GHz
-                            512GB
-                            Windows 10 Pro (English/French/Spanish)
+                        <p>15.6-inch FHD (1920 x 1080) Anti-Glare LED Backlight Touch Narrow Border WVA Display
+                            AMD Ryzen 7 5700U 8-core/16-thread Mobile Processor with Radeon Graphics
+                            16GB 3200MHz DDR4, 512GB PCIe NVMe Class 35 Solid State Drive
+                            AMD Radeon Graphics with shared graphics memory
+                            802.11ac 2x2 WiFi + Bluetooth 4.1
+                           
                             </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
@@ -325,18 +314,17 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7212 Rugged</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">38</div>
+                            <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 5000 2-in-1 14"  HD</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">22</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">1200</h1>
+                            <h1 class="shop-item-price">679</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopDell02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            11.6 FHD (1920x1080) 16:9 Direct-View outdoor-readable display w/gloved multi-touch AG/AR/AS/Polarizer and Gorilla Glass
-                            Fully-rugged tablet can tackle the most demanding rugged tasks, Microsoft Windows 10 Pro 64-bit pre-installed, Tablet supports a secondary Li-ion battery.
+                        <p>【15.6" diagonal HD Display】1366 x 768 resolution boasts impressive color and clarity, Anti-Glare Energy-efficient LED screen.
+                            【4GB DDR4 RAM】Plenty of high-bandwidth RAM to smoothly run your games as well as multiple programs. 【 128GB PCIe SSD】Save files fast and store more data. 
                             </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
@@ -349,26 +337,17 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7200</h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">39</div>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Newest Dell Inspiron 3000 Premium</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">23</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">399</h1>
+                        <h1 class="shop-item-price">758</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/LaptopDell03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	7200
-                        Brand	Dell
-                        Generation	8th Generation
-                        Screen Size	12.3 Inches
-                        Operating System	Windows 10 Professional
-                        About this item
-                        Processor Manufacturer: Intel
-                        Processor Type: Core i7
-                        Processor Generation: 8th Gen
-                        Processor Model: i7-8665U
-                        Processor Speed: 1. 90 GHz</p>
+                    <p>【Dell Inspiron Laptop】16GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once; 1TB PCIe Solid State Drive allows to fast bootup and data transfer
+                        【11th Generation Processor】11th Generation Intel Core i5-1135G7 Quad-Core Processor (4 Cores, 8MB Cache, 8 Threads, Base Frequency at 2.4 GHz, up to 4.2 GHz at Maximum Turbo Speed)</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -381,19 +360,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Dell Latitude 7000 7320</h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">40</div>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Dell Inspiron 3593 15.6"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">24</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">328</h1>
+                        <h1 class="shop-item-price">749</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/dellTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopDell04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        2.20 GHz processor and 16 GB memory deliver a powerful tablet performance; allows rapid switching between apps, smooth gaming experience, and effortless web browsing
-                        Save full length movies, songs and other HD content in the massive 512 GB SSD storage
-                        13" (1920 x 1200) screen.</p>
+                    <p>Full-size non-backlit Keyboard with numeric keypad. 802.11 Dual Band Wireless-AC WLAN, Stereo Speakers, Built-in HD Webcam, 10/100/1000GB Ethernet LAN;USB 3.2 Gen 1 Type A (x2), USB 2.0 Type A (x1), HDMI (x1) - SD Media Card Reader (SD, SDHC, SDXC) - 10/100/1000 Mbps- 1 combo headphone / microphone jack</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -415,20 +391,16 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP 10 Tablet (8GB, WiFi,3G)</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">41</div>
+                            <h5 class="shop-item-title text-success mb-0 ">2021 Newest HP 14"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">25</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">399</h1>
+                            <h1 class="shop-item-price">379</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet1.png"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptohtml01.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            2MP primary camera and 0.3MP secondary camera
-                            10 inch Capacitive Touchscreen with 1280 x 800 pixels with Auto Rotate
-                            8 GB (Available user memory of the device may be lower than the stated memory due to default pre-installed apps and device OS) and expandable upto 32GB
-                            4600 mAh Lithium - Polymer uptp 5 hours(video)</p>
+                        <p>Laptop Light-Weight, AMD 3020e(Up to 2.6GHz), 8GB RAM, 128GB SSD + 64GB eMMC, 1 Year Office 365, WiFi, Bluetooth 5, USB Type-A&C, HDMI, Webcam, Win10, w/Ghost Manta Accessories. Substantial high-bandwidth RAM to smoothly run your games and photo- and video-editing applications.</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -440,20 +412,16 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">HP TouchPad Wi-Fi 16 GB</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">42</div>
+                            <h5 class="shop-item-title text-success mb-0 ">2021 Newest HP 15.6"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">26</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">189</h1>
+                            <h1 class="shop-item-price">549</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptohtml02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>About this item
-                            Brilliant 9.7-inch diagonal LED backlit multitouch display
-                            Seamless multitasking with HP webOS 3.0 and essential productivity apps
-                            Exclusive Beats Audio for studio-quality sound
-                            Blazing fast Qualcomm Snapdragon dual-CPU APQ8060 1.2GHz processor.</p>
+                        <p>Micro-Edge HD Laptop, Intel Core i3-1115G4 up to 4.1GHz (Beat i5-1035G4), 16GB RAM, 512GB NVMe SSD, Numpad, Lightweight, WiFi, Bluetooth, Webcam, Fast Charge, HDMI, Win10 S. 3 GHz base frequency, up to 4.1 GHz with Intel Turbo Boost Technology.</p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -465,23 +433,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP 1PH94UT Elite x2</h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">43</div>
+                        <h5 class="shop-item-title text-success mb-0 ">2022 Newest HP 15.6"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">27</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">560</h1>
+                        <h1 class="shop-item-price">399</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptohtml03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Series	1PH94UT#ABA
-                        Brand	HP
-                        Screen Size	12.3 Inches
-                        Operating System	Win 10 pro
-                        Memory Storage Capacity	8 GB
-                        About this item
-                        HP SmartBuy 1012 i5-7300U 12.3 8GB/256 PC Core i5-7300U, 12.3 WQXGA BV LED UWVA, UMA, Webcam, 8GB DDR3 RAM, 256GB SSD, BT, 4C Battery, Win 10 PRO 64, 3yr Warranty U.S
-                        - English localization</p>
+                    <p>FHD IPS Laptop Computer, Intel Celeron N4020(up to 2.8 GHz), 8GB RAM, 128GB SSD, Office 365, HDMI, Bluetooth, Webcam, USB-C, Windows 10S, Black, Online Class Ready, JVQ Mousepad. Dual-core, two-way processing provides maximum high-efficiency power to go. Dual Stereo speakers & HP True Vision HD Camera and dual-array microphones. </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -494,19 +455,16 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">HP Pro Tablet 408</h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">44</div>
+                        <h5 class="shop-item-title text-success mb-0 ">HP Pavilion 15 </h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">28</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">364</h1>
+                        <h1 class="shop-item-price">888</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/hpTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptohtml04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>About this item
-                        Windows 8 Pro 32
-                        Intel Atom Z2760 (1.5 GHz, up to 1.8 GHz using Intel Burst Technology and Intel Hyper-Threading Technology, 1 MB cache, 2 cores)
-                        10.1 diagonal WXGA wide-viewing angle (1280 x 800); Ultra- Wide-viewing angle.</p>
+                    <p>11th Gen Intel Core i7-1165G7 Processor, 16 GB RAM, 512 GB SSD Storage, Full HD IPS Micro-Edge Display, Windows 11 Pro, Compact Design, Long Battery Life (15-eg0025nr, 2021). Experience a laptop with premium performance, so you can spend less time getting more done; it’s like a small PC. </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -528,24 +486,17 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Lenovo 7" Tab M7 32GB</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">45</div>
+                            <h5 class="shop-item-title text-success mb-0 ">Lenovo Chromebook C330 2-in-1"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">29</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">89</h1>
+                            <h1 class="shop-item-price">248</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet1.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopLenovo01.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>Stay entertained and connected in style with the Lenovo 7" Tab M7 32GB Tablet from Lenovo. 
-                            2 GHz MediaTek MT8166
-                            2GB of LPDDR4 RAM
-                            7" IPS Touchscreen Display
-                            1024 x 600 Screen Resolution
-                            32GB eMMC SSD
-                            Wi-Fi 5 (802.11ac) | Bluetooth 5.0
-                            Micro-USB 2.0 | microSD Card Slot
-                            Android 11 Go Edition</p>
+                        <p>10th Generation Intel Core i5-10210U Processor (4-Core, 1.6 GHz Up to 4.2 GHz, 6 MB Cache). Equipped with the latest 10th Gen Intel processor, long battery life, and speedy connectivity. FHD Laptop, Intel Core i5-10210U(up to 4.2GHz), 20GB RAM 512GB SSD, WiFi Bluetooth HDMI, Grey, Windows 11.
+                        </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -557,19 +508,18 @@
                     <div class="shop-item card p-2">
                         <div class="p-info px-3 py-3">
                         <div>
-                            <h5 class="shop-item-title text-success mb-0 ">Lenovo 10.3" Smart Tab M10</h5> <span>Tablet</span>
-                            <div class="shop-item-id" style="display: none;">46</div>
+                            <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaPad 3i 15.6"</h5> <span>Laptop</span>
+                            <div class="shop-item-id" style="display: none;">30</div>
                         </div>
                         <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                            <h1 class="shop-item-price">269</h1>
+                            <h1 class="shop-item-price">570</h1>
                         </div>
                     </div>
-                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet2.jpg"> </div>
+                    <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopLenovo02.webp"> </div>
                     <div class="p-about shop-item-details">
-                        <p>With a large 10.3" FHD screen, the 10.3" Smart Tab M10 FHD Plus 128GB Tablet with Alexa Smart Dock from Lenovo can be used for a whole variety of applications. Remote learning, games, reading books and magazines, streaming video. 2.3/1.8 GHz Helio P22T Octa-Core CPU
-                            4GB of RAM
-                            10.3" FHD IPS 10-Point Touch Display
-                            1920 x 1200.</p>
+                        <p>i3-1115G4 11th Generation Intel Core i3-1115G4 Processor (6MB Cache, up to 4.1 GHz) | Intel UHD Graphics
+                            【15.6” FHD Touchscreen Display】The 1920 x 1080 resolution boasts impressive color and clarity. IPS technology for wide viewing angles. Energy-efficient LED backlight.
+                            </p>
                     </div>
                     <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -581,19 +531,17 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Lenovo 8" Tab M8 HD </h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">47</div>
+                        <h5 class="shop-item-title text-success mb-0 ">Lenovo IdeaPad 3 Laptop, 14.0"</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">31</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">299</h1>
+                        <h1 class="shop-item-price">520</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet3.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopLenovo03.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Surf the web and watch videos on the 8" 1280 x 800 display of the Lenovo 8" Tab M8 HD 32GB Tablet (2nd Gen). This tablet is powered by a 2.0 GHz MediaTek Helio A22 Quad-Core processor, 2GB of RAM, and 32GB of eMMC storage. Key Features
-                        2.0 GHz MediaTek Helio A22 Quad-Core
-                        2GB RAM | 32GB eMMC Storage
-                        8" 1280 x 800 </p>
+                    <p>Powerhouse performance from AMD Ryzen 5 5500U mobile processor, 8GB DDR4 RAM, 256GB SSD storage, and AMD Radeon 7 Graphics
+                        The IdeaPad 3 14-inch laptop has 4-side narrow bezels that let you see more of the FHD (1920 x 1080) screen for wider viewing angles and less clutter.</p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
             </div>
@@ -606,17 +554,18 @@
                 <div class="shop-item card p-2">
                     <div class="p-info px-3 py-3">
                     <div>
-                        <h5 class="shop-item-title text-success mb-0 ">Lenovo Tab M10 Plus</h5> <span>Tablet</span>
-                        <div class="shop-item-id" style="display: none;">48</div>
+                        <h5 class="shop-item-title text-success mb-0 ">Lenovo Flex 5 14 2-in-1</h5> <span>Laptop</span>
+                        <div class="shop-item-id" style="display: none;">32</div>
                     </div>
                     <div class="p-price d-flex flex-row mt-3"> <span>€</span>
-                        <h1 class="shop-item-price">179</h1>
+                        <h1 class="shop-item-price">738</h1>
                     </div>
                 </div>
-                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesTablet/lenovoTablet4.jpg"> </div>
+                <div class="text-center p-image mt-3"> <img class="shop-item-image" src="./imagesLaptop/laptopLenovo04.webp"> </div>
                 <div class="p-about shop-item-details">
-                    <p>Premium look & feel with metal back cover and slim, narrow bezels. Enjoy your favorite videos on the 10. 3" FHD display with TDDI technology
-                        Fast and powerful Octa-Core processor with up to 2.3 GHz. Never miss a moment with 8 MP rear + 5 MP front cameras, dual microphones, and 2 side speakers tuned with Dolby Atmos.</p>
+                    <p>Thin, light, and stylish – This 2-in-1 laptop weighs just 3.64 pounds and is only 0.82" thick. It's soft and comfortable to the touch, with a durable paint that creates a better user experience. Digital pen included
+                        The 10-point, 14-inch FHD (1920 x 1080) IPS touchscreen allows the Lenovo Flex 5 14"
+                        </p>
                 </div>
                 <div class="buttons align-self-center d-flex flex-row gap-3 px-3"> <button class="btn btn-outline-success w-100  shop-item-button">Buy Now</button> </div>
                 </div>
@@ -635,7 +584,7 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-success border-bottom pb-3 border-light logo">easy.TECH</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="#"> About us</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../ABOUT-US/about.html"> About us</a></li>
                        
                     <li class="adress pt-3">
                         <p>Gedimino pr. 24, Vilnius<br>Lithuania</p>            
@@ -656,9 +605,9 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Products</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none text-secondary" href="../Tablets/tablets.php">Tablets</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../Laptop/laptop.php">Laptops</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../Desktops/desktop.php">Desktops</a></li>  
+                    <li><a class="text-decoration-none text-secondary" href="../Tablets/tablets.html">Tablets</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../Laptop/laptop.html">Laptops</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../Desktops/desktop.html">Desktops</a></li>  
                 </ul>
             </div>
 
@@ -666,25 +615,12 @@
                 <h4 class="h4 text-light border-bottom pb-3 border-light">My account</h4>
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none text-secondary" href="#"></a></li>
-                    <?php  
-                        if (isset($_SESSION['username'])){
-                            echo '
-                            <li>
-                                <a class="text-decoration-none text-secondary btn disabled" href="#">Sign in</a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none text-secondary btn disabled" href="#">Create account</a>
-                            </li>';
-                        }else{
-                            echo '
-                            <li>
-                                <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
-                            </li>
-                            <li>
-                                <a class="text-decoration-none text-secondary" href="../../registration/registration.php">Create account</a>
-                            </li>';
-                        };
-                    ?>
+                    <li>
+                        <a onclick="registration()" class="text-decoration-none text-secondary sto" href="#">Sign in</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none text-secondary" href="../../registration/registration.html">Create account</a>
+                    </li>
                     <h4 class="mt-5 connect">Stay connected</h4>
                     <li class="list-inline-item text-center ">
                         <a class="text-light text-decoration-none " target="_blank" href="http://facebook.com/"><i class="fa fa-facebook-square " aria-hidden="true"></i></a>
@@ -704,10 +640,10 @@
             <div class="col-md-3 pt-5">
                 <h4 class="h4 text-light border-bottom pb-3 border-light">Policies</h4>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.php">Terms and Conditions</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.php">Privacy Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.php">Returns Policy</a></li>
-                    <li><a class="text-decoration-none text-secondary" href="../contact.php">Contact</a></li>
+                    <li><a class="text-decoration-none  text-secondary" href="../../POLICIES/Terms.html">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Privacy.html">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../../POLICIES/Returns.html">Returns Policy</a></li>
+                    <li><a class="text-decoration-none text-secondary" href="../contact.html">Contact</a></li>
                 </ul>
             </div>
 
